@@ -8,8 +8,7 @@ module.exports = {
     ADMIN: "ADMIN",
   },
   USER_TYPE: {
-    SERVICE_PROVIDER: "SERVICE_PROVIDER",
-    // INDIVIDUAL: "INDIVIDUAL",
+    CREATIVE: "CREATIVE",
     USER: "USER",
   },
   SUBSCRITION_STATUS: {

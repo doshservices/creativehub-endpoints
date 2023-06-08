@@ -1,4 +1,4 @@
-const User = require("../services/user");
+const User = require("../service/USER");
 const { success, error } = require("../utils/baseController");
 const { generateAuthToken } = require("../core/userAuth");
 const { logger } = require("../utils/logger");
@@ -112,20 +112,35 @@ module.exports.unfollowUser = async (req, res) => {
   }
 };
 
-module.exports.resetPassword = async (req, res) => {
-  try {
-    const loginId = req.email;
-    const { oldPassword, newPassword } = req.body;
-    const user = await new User({
-      oldPassword,
-      newPassword,
-      loginId,
-    }).ResetPassword();
-    return success(res, { user }, "Password Reset");
-  } catch (err) {
-    logger.error("Error occurred at resetPassword", err);
+exports.forgotPassword = (req, res) => {
+  new User(req.body)
+    .forgotPassword()
+    .then((data) =>
+      success(res, {
+        status: "success",
+        success: true,
+        message: "Token Has Been Sent To Your Email",
+      })
+    )
+  .catch((err) => {
+    logger.error("Error occurred at forgotPassword", err);
     return error(res, { code: err.code, message: err.message });
-  }
+  });
 };
 
+exports.resetPassword = (req, res) => {
+  new User(req.body)
+    .resetPassword()
+    .then((data) =>
+      success(res, {
+        status: "success",
+        success: true,
+        message: "Password Reset Successful",
+      })
+    )
+    .catch((err) => {
+      logger.error("Error occurred at resetPassword", err);
+      return error(res, { code: err.code, message: err.message });
+    });
+};
 

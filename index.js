@@ -18,7 +18,9 @@ app.use(morgan('tiny'));
 
 
 // middlewares
+const user = require('./src/router/userRouter')
 
+app.use('/api/', user)
 
 
 app.get('/', (req, res) => {

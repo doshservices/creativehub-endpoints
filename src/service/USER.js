@@ -4,7 +4,7 @@ const { throwError } = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
 const bcrypt = require("bcrypt");
-const { findOne } = require("../models/userModel");
+const util = require("../utils/util");
 
 class User {
   constructor(data) {
@@ -85,11 +85,35 @@ class User {
     }
     return user;
   }
-
-  async addUserInterest() {
-    const { userId, interest } = this.data;
-    return await userSchema.updateOne({ _id: userId, interest });
-  }
+  
+  async updateUserDetails() {
+  const { newDetails, oldDetails } = this.data;
+  const updates = Object.keys(newDetails);
+  console.log(updates);
+  const allowedUpdates = [
+    "firstName",
+    "lastName",
+    "phoneNumber",
+    "country",
+    "location",
+    "gender",
+    "skills",
+    "bio",
+    "profilePicture",
+    "validId",
+    "languages",
+    "certificates",
+    "urls",
+    "hourlyRate",
+    "status"
+  ];
+  return await util.performUpdate(
+    updates,
+    newDetails,
+    allowedUpdates,
+    oldDetails
+  );
+}
 
   async followUser() {
     const { userId, followerId } = this.data;

@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const validator = require("validator");
 const uniqueValidator = require("mongoose-unique-validator");
 const { throwError } = require("../utils/handleErrors");
-const { GENDER, USER_TYPE, SERVICE_TYPE, SUBSCRITION_STATUS } = require("../utils/constants");
+const { GENDER, USER_TYPE, SERVICE_TYPE, SUBSCRITION_STATUS, ACCOUNT_STATUS } = require("../utils/constants");
 
 
 const Schema = new mongoose.Schema({
@@ -53,7 +53,7 @@ const Schema = new mongoose.Schema({
   country: {
     type: String,
   },
-  address: {
+  location: {
     type: String,
   },
   otp: {
@@ -76,10 +76,8 @@ const Schema = new mongoose.Schema({
   },
   status: {
     type: String,
-    default: "active",
-  },
-  pricing: {
-    type: String,
+    default: ACCOUNT_STATUS.ACTIVE,
+    enum: Object.keys(ACCOUNT_STATUS)
   },
   followers: {
     type: Array,
@@ -92,6 +90,9 @@ const Schema = new mongoose.Schema({
   urls: {
     type: Array,
     default: []
+  },
+  hourlyRate: {
+    type: String
   },
   subscribed: {
     type: String,

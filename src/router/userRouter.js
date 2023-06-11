@@ -12,8 +12,8 @@ userRoute
 userRoute.route("/users/login").post(user.login);
 
 userRoute
-  .route("/users/add-interests")
-  .post(authenticate, user.addUserInterest);
+  .route("/users/add-skills")
+  .post(authenticate, user.updateUserDetails);
 
 userRoute.route("/users/follow-user").post(authenticate, user.followUser);
 

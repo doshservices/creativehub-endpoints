@@ -76,14 +76,14 @@ module.exports.sendOtp = async (req, res) => {
   }
 };
 
-module.exports.addUserInterest = async (req, res) => {
+module.exports.updateUserDetails = async (req, res) => {
   try {
-    const userId = req.user._id;
-    const interest = req.body.interest;
-    const user = await new User({ interest, userId }).addUserInterest();
-    return success(res, { user }, "Interests Added");
+    const oldDetails = req.user;
+    const newDetails = req.body;
+    const user = await new User({ newDetails, oldDetails }).updateUserDetails();
+    return success(res, { user }, "User Profile Updated");
   } catch (err) {
-    logger.error("Error occurred at updateUserInterest", err);
+    logger.error("Error occurred at updateUserDetails", err);
     return error(res, { code: err.code, message: err.message });
   }
 };

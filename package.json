@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=prod node server",
-    "dev": "cross-env NODE_ENV=dev nodemon server",
+    "start": "cross-env NODE_ENV=prod node index",
+    "dev": "cross-env NODE_ENV=dev nodemon index",
     "test": "cross-env NODE_ENV=test jest"
   },
   "repository": {

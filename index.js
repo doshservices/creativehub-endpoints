@@ -26,8 +26,12 @@ app.use('/api/', creatives)
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-  });
+  res
+    .status(200)
+    .send(
+      '<code>Booking Backend Running...<a target="_blank" href="https://documenter.getpostman.com/view/10152625/2s935hS7cC" style="text-decoration: none; cursor: pointer; color: black; font-weight: bold">&lt;Go To Docs/&gt;</a></code>'
+    )
+    });
 
 
 

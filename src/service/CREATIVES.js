@@ -7,7 +7,7 @@ class Creatives {
     this.data = data;
     this.errors = [];
   }
-
+  //  get all creatives
   async getAllCreatives() {
     return await userModel
       .find({role: USER_TYPE.CREATIVE}).orFail(new Error('No Creative Found'));
@@ -41,6 +41,13 @@ class Creatives {
     };
     return await userModel.find(query);
   }
+
+  // send bargain
+  // async sendBargain () {
+  //   const {skill,}
+  // }
+
+
 }
 
 module.exports = Creatives;

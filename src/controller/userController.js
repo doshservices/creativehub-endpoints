@@ -1,4 +1,4 @@
-const User = require("../services/user");
+const User = require("../service/USER");
 const { success, error } = require("../utils/baseController");
 const { generateAuthToken } = require("../core/userAuth");
 const { logger } = require("../utils/logger");
@@ -76,14 +76,14 @@ module.exports.sendOtp = async (req, res) => {
   }
 };
 
-module.exports.addUserInterest = async (req, res) => {
+module.exports.updateUserDetails = async (req, res) => {
   try {
-    const userId = req.user._id;
-    const interest = req.body.interest;
-    const user = await new User({ interest, userId }).addUserInterest();
-    return success(res, { user }, "Interests Added");
+    const oldDetails = req.user;
+    const newDetails = req.body;
+    const user = await new User({ newDetails, oldDetails }).updateUserDetails();
+    return success(res, { user }, "User Profile Updated");
   } catch (err) {
-    logger.error("Error occurred at updateUserInterest", err);
+    logger.error("Error occurred at updateUserDetails", err);
     return error(res, { code: err.code, message: err.message });
   }
 };
@@ -112,20 +112,35 @@ module.exports.unfollowUser = async (req, res) => {
   }
 };
 
-module.exports.resetPassword = async (req, res) => {
-  try {
-    const loginId = req.email;
-    const { oldPassword, newPassword } = req.body;
-    const user = await new User({
-      oldPassword,
-      newPassword,
-      loginId,
-    }).ResetPassword();
-    return success(res, { user }, "Password Reset");
-  } catch (err) {
-    logger.error("Error occurred at resetPassword", err);
+exports.forgotPassword = (req, res) => {
+  new User(req.body)
+    .forgotPassword()
+    .then((data) =>
+      success(res, {
+        status: "success",
+        success: true,
+        message: "Token Has Been Sent To Your Email",
+      })
+    )
+  .catch((err) => {
+    logger.error("Error occurred at forgotPassword", err);
     return error(res, { code: err.code, message: err.message });
-  }
+  });
 };
 
+exports.resetPassword = (req, res) => {
+  new User(req.body)
+    .resetPassword()
+    .then((data) =>
+      success(res, {
+        status: "success",
+        success: true,
+        message: "Password Reset Successful",
+      })
+    )
+    .catch((err) => {
+      logger.error("Error occurred at resetPassword", err);
+      return error(res, { code: err.code, message: err.message });
+    });
+};
 

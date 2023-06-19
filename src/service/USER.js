@@ -4,7 +4,7 @@ const { throwError } = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
 const bcrypt = require("bcrypt");
-const { findOne } = require("../models/userModel");
+const util = require("../utils/util");
 
 class User {
   constructor(data) {
@@ -47,7 +47,7 @@ class User {
       newUser.verified = true;
     }
     console.log(this.data.email);
-    await sendEmailToken(this.data.email, verificationCode);
+    // await sendEmailToken(this.data.email, verificationCode);
     return newUser;
   }
 
@@ -85,11 +85,35 @@ class User {
     }
     return user;
   }
-
-  async addUserInterest() {
-    const { userId, interest } = this.data;
-    return await userSchema.updateOne({ _id: userId, interest });
-  }
+  
+  async updateUserDetails() {
+  const { newDetails, oldDetails } = this.data;
+  const updates = Object.keys(newDetails);
+  console.log(updates);
+  const allowedUpdates = [
+    "firstName",
+    "lastName",
+    "phoneNumber",
+    "country",
+    "location",
+    "gender",
+    "skills",
+    "bio",
+    "profilePicture",
+    "validId",
+    "languages",
+    "certificates",
+    "urls",
+    "hourlyRate",
+    "status"
+  ];
+  return await util.performUpdate(
+    updates,
+    newDetails,
+    allowedUpdates,
+    oldDetails
+  );
+}
 
   async followUser() {
     const { userId, followerId } = this.data;
@@ -125,31 +149,52 @@ class User {
     return "OTP SENT!";
   }
 
-  async ResetPassword() {
-    const { loginId, newPassword, oldPassword } = this.data;
-    const ComfirmPassword = await userSchema.findByCredentials(
-      loginId,
-      oldPassword
-    );
-    if (ComfirmPassword) {
-      const hashed = await bcrypt.hash(newPassword, 10);
-      const user = await userSchema.findOneAndUpdate(
-        { email: loginId },
-        { token: null, password: hashed },
-        { new: true }
-      );
-      return await user.save();
+  async forgotPassword() {
+    const { email } = this.data;
+    const verificationCode = Math.floor(100000 + Math.random() * 100000);
+    if (!email) {
+      throwError("Please Input Your Email");
     }
+    const updateUser = await userSchema.findOneAndUpdate(
+      {
+        email,
+      },
+      { otp: verificationCode },
+      { new: true }
+    );
+    if (!updateUser) {
+      return throwError("Invalid Email");
+    }
+      // await sendResetPasswordToken(
+      //   updateUser.email,
+      //   updateUser.firstName,
+      //   updateUser.otp
+      // );
+    
+    return updateUser;
   }
 
-  async forgotPassword() {
-    const { loginId, otp, newPassword } = this.data;
-    const user = await userSchema.findOne({ email: loginId });
-    if (user.otp === otp) {
-      user.password = await bcrypt.hash(newPassword, 10);
-      return await user.save();
+  async resetPassword() {
+    const { otp, newPassword } = this.data;
+    if (!otp || !newPassword) {
+      throwError("Please Input Your Otp and New Password");
     }
+    const hashed = await bcrypt.hash(newPassword, 10);
+    const updateUser = await userSchema.findOneAndUpdate(
+      {
+        otp,
+      },
+      { otp: null, password: hashed },
+      { new: true }
+    );
+    if (!updateUser) {
+      throwError("Invalid OTP!");
+    }
+    // await SuccessfulPasswordReset(updateUser.firstName, updateUser.email);
+    return updateUser;
   }
+
+ 
 
   
 }

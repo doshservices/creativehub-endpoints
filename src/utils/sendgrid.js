@@ -6,7 +6,6 @@ const { logger } = require("../utils/logger");
 const verificationCode = Math.floor(100000 + Math.random() * 100000);
 
 async function sendEmailToken(Email, token) {
-    console.log({Email})
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender

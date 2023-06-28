@@ -1,5 +1,5 @@
 const userSchema = require("../models/userModel");
-const { sendEmailToken } = require("../utils/sendgrid");
+const { sendEmailToken, registrationSuccessful } = require("../utils/sendgrid");
 const { throwError } = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
@@ -47,7 +47,7 @@ class User {
       newUser.verified = true;
     }
     console.log(this.data.email);
-    // await sendEmailToken(this.data.email, verificationCode);
+    await sendEmailToken(this.data.email, verificationCode);
     return newUser;
   }
 
@@ -81,6 +81,7 @@ class User {
       if (user.role === USER_TYPE.USER) {
         user.verified = true;
         await user.save();
+        await registrationSuccessful(user.email, user.firstName)
       }
     }
     return user;
@@ -165,11 +166,11 @@ class User {
     if (!updateUser) {
       return throwError("Invalid Email");
     }
-      // await sendResetPasswordToken(
-      //   updateUser.email,
-      //   updateUser.firstName,
-      //   updateUser.otp
-      // );
+      await sendResetPasswordToken(
+        updateUser.email,
+        updateUser.firstName,
+        updateUser.otp
+      );
     
     return updateUser;
   }

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/doshservices/creativehub-endpoints#readme",
   "dependencies": {
+    "@novu/node": "^0.16.0",
     "@sendgrid/mail": "^7.7.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",

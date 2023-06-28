@@ -1,3 +1,4 @@
+const bargainSchema = require("../models/bargainModel");
 const userModel = require("../models/userModel");
 const { USER_TYPE, ACCOUNT_STATUS } = require("../utils/constants");
 const { throwError } = require("../utils/handleErrors");
@@ -10,7 +11,8 @@ class Creatives {
   //  get all creatives
   async getAllCreatives() {
     return await userModel
-      .find({role: USER_TYPE.CREATIVE}).orFail(new Error('No Creative Found'));
+      .find({ role: USER_TYPE.CREATIVE })
+      .orFail(new Error("No Creative Found"));
   }
 
   // search creatives
@@ -43,11 +45,32 @@ class Creatives {
   }
 
   // send bargain
-  // async sendBargain () {
-  //   const {skill,}
-  // }
+  async sendBargain() {
+    const { skill, projectDescription, audio, recieverId, senderId } =
+      this.data;
+    return await new bargainSchema({
+      skill,
+      projectDescription,
+      audio,
+      recieverId,
+      senderId,
+    }).save();
+  }
 
+  async acceptBargain() {
+    const { id, response } = this.data;
+    const creatives = await bargainSchema
+      .findByIdAndUpdate(id, {status: response})
+      .populate("senderId recieverId");
+    console.log({creatives});
+    return creatives;
+  }
 
+  // get bargains
+  async getBargains() {
+    return await bargainSchema.find({})
+    .populate("senderId recieverId");
+  }
 }
 
 module.exports = Creatives;

@@ -14,4 +14,12 @@ creativeRouter
   .patch(authenticate, Creatives.acceptBargain)
   .get(authenticate, Creatives.getBargains);
 
+creativeRouter
+  .route("/creatives/review/")
+  .post(authenticate, Creatives.reviewCreative)
+  .get(authenticate, Creatives.getUserReview);
+
+creativeRouter.get("/creatives/bargain/user/:id", Creatives.getBargainByUserId);
+creativeRouter.get("/creatives/bargain/:id", Creatives.getBargainById);
+
 module.exports = creativeRouter;

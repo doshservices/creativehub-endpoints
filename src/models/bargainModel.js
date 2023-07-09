@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const validator = require("validator");
 const uniqueValidator = require("mongoose-unique-validator");
-const { throwError } = require("../utils/handleErrors");
 const { BARGAIN_STATUS } = require("../utils/constants");
 
 
@@ -25,13 +22,14 @@ const Schema = new mongoose.Schema({
     type: String,
     required: true
   },
+  proposedPrice: {
+    type: String,
+    required: true
+  },
   status: {
     type: String,
     enum: Object.keys(BARGAIN_STATUS),
     default: BARGAIN_STATUS.PENDING
-  },
-  audio: {
-    type: String,
   },
 })
 

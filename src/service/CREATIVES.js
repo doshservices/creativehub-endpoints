@@ -1,7 +1,9 @@
 const bargainSchema = require("../models/bargainModel");
 const userModel = require("../models/userModel");
 const { USER_TYPE, ACCOUNT_STATUS } = require("../utils/constants");
+const { initiatePaymentFlutterwave } = require("../integrations/flutterwave");
 const { throwError } = require("../utils/handleErrors");
+const reviewSchema = require("../models/reviewModel");
 
 class Creatives {
   constructor(data) {
@@ -46,12 +48,12 @@ class Creatives {
 
   // send bargain
   async sendBargain() {
-    const { skill, projectDescription, audio, recieverId, senderId } =
+    const { skill, projectDescription, proposedPrice, recieverId, senderId } =
       this.data;
     return await new bargainSchema({
       skill,
       projectDescription,
-      audio,
+      proposedPrice,
       recieverId,
       senderId,
     }).save();
@@ -59,17 +61,53 @@ class Creatives {
 
   async acceptBargain() {
     const { id, response } = this.data;
-    const creatives = await bargainSchema
-      .findByIdAndUpdate(id, {status: response})
+    const bargain = await bargainSchema
+      .findByIdAndUpdate(id, { status: response })
       .populate("senderId recieverId");
-    console.log({creatives});
-    return creatives;
+    if (response === "ACCEPTED") {
+      const email = bargain.senderId.email;
+      const name = bargain.senderId.firstName;
+      const phone = bargain.senderId.phoneNumber;
+      const amount = bargain.proposedPrice;
+      const pay = await initiatePaymentFlutterwave(
+        amount,
+        email,
+        phone,
+        name,
+        bargain.senderId._id
+      );
+      console.log({ pay });
+    }
+    return bargain;
   }
 
   // get bargains
   async getBargains() {
-    return await bargainSchema.find({})
-    .populate("senderId recieverId");
+    return await bargainSchema.find({}).populate("senderId recieverId");
+  }
+
+  // get bargains by id
+  async getBargainById() {
+    const { id } = this.data;
+    return await bargainSchema.findById(id).populate("senderId recieverId");
+  }
+
+  // get bargains by user id
+  async getBargainByUserId() {
+    const { id } = this.data;
+    return await bargainSchema
+      .find({ $or: [{ recieverId: id }, { senderId: id }] })
+      .populate("senderId recieverId");
+  }
+
+  async reviewCreative() {
+    const { userId, stars, comment } = this.data;
+    return await new reviewSchema({ userId, stars, comment }).save();
+  }
+
+  async getUserReview() {
+    const {userId} = this.data
+    return await reviewSchema.find({userId})
   }
 }
 

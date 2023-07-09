@@ -1,7 +1,5 @@
 // /*eslint-disable*/
 var axios = require("axios");
-// const keys = require("../core/config");
-const FlutterSchema = require("../models/flutterModel");
 const userSchema = require("../models/userModel");
 const Flutterwave = require("flutterwave-node-v3");
 const { BACKEND_BASE_URL, FLW_SECRET_KEY, FLW_PUBLIC_KEY, PLAN_ID} = require("../core/config");

@@ -7,6 +7,11 @@ const Schema = new mongoose.Schema({
     ref: "user",
     required: true,
   },
+  creativeId: {
+    type: mongoose.Types.ObjectId,
+    ref: "user",
+    required: true,
+  },
   stars: {
     type: Number,
     required: true,

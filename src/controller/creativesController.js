@@ -88,11 +88,12 @@ module.exports.getBargainByUserId = async (req, res) => {
 
 module.exports.reviewCreative = async (req, res) => {
   try {
-    const { userId, stars, comment } = req.body;
+    const { userId, stars, comment, creativeId } = req.body;
     const reviews = await new Creatives({
       userId,
       stars,
       comment,
+      creativeId,
     }).reviewCreative();
     return success(res, { reviews });
   } catch (err) {

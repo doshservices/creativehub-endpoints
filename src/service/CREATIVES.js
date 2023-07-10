@@ -77,10 +77,8 @@ class Creatives {
         name,
         bargain.senderId._id
       );
-      await bargainEmail(name,email,pay.data.link, "ACCEPTED")
-    }
-    else if (response === "DECLINED") {
-      
+      await bargainEmail(name, email, pay.data.link, "ACCEPTED");
+    } else if (response === "DECLINED") {
     }
     return "RESPONSE SENT!!";
   }
@@ -105,13 +103,18 @@ class Creatives {
   }
 
   async reviewCreative() {
-    const { userId, stars, comment } = this.data;
-    return await new reviewSchema({ userId, stars, comment }).save();
+    const { userId, stars, comment, creativeId } = this.data;
+    return await new reviewSchema({
+      userId,
+      stars,
+      comment,
+      creativeId,
+    }).save();
   }
 
   async getUserReview() {
-    const {userId} = this.data
-    return await reviewSchema.find({userId})
+    const { userId } = this.data;
+    return await reviewSchema.find({ userId }).populate("userId creativeId");
   }
 }
 

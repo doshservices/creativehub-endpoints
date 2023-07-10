@@ -69,6 +69,7 @@ module.exports.sendOtp = async (req, res) => {
   try {
     const email = req.body.email;
     const user = await new User({ email }).sendOtp();
+    console.log(user)
     return success(res, { user });
   } catch (err) {
     logger.error("Error occurred at sendOtp", err);

@@ -6,16 +6,18 @@ const { logger } = require("../utils/logger");
 const verificationCode = Math.floor(100000 + Math.random() * 100000);
 
 async function sendEmailToken(Email, token) {
-    console.log({Email})
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
     subject: "Activation Token",
-    html: ''
+    html: `token: ${token}`
   };
  return sgMail
     .send(msg)
-    .then((result) => { console.log(result)})
+    .then((result) => { 
+      console.log(result)
+      return result
+  })
     .catch((error) => {
       console.error(error);
       if (error.response) {
@@ -54,7 +56,7 @@ async function registrationSuccessful(Email, firstName) {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
     subject: "Registration Successful",
-    html: ''
+    html: '<p>thank you for registering</p>'
   };
   try {
         const result = await sgMail
@@ -128,18 +130,15 @@ function SuccessfulPasswordReset(Name, Email) {
     });
 }
 
-async function bookingEmail(Name, Email, ApartmentName, CheckIn, CheckOut, BookingAmount, bookingOrderId) {
+async function bargainEmail(Name, Email, CheckOut, Response) {
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
-    subject: "Booking Confirmation",
+    subject: "Bargain Confirmation",
     html: `<h1>Dear ${Name},</h1>
-        <p>Booking with order number <b>${bookingOrderId}</b> has been <b>Confirmed</b></p>
-        <h5> Booking Details</h5>
-        <p>Apartment Name: ${ApartmentName}</p>
-        <p>Check In Date:${moment(CheckIn)}</p>
-        <p>Check Out Date:${moment(CheckOut)}</p>
-        <p>Booking Amount:${BookingAmount}</p>`,
+        <p>Your bargain has been ${Response}</p>
+        <p>click the link below to pay for the service</p>
+        <a href="${CheckOut}">${CheckOut}</a>`,
   };
 
  try {
@@ -162,37 +161,6 @@ async function bookingEmail(Name, Email, ApartmentName, CheckIn, CheckOut, Booki
     }
 }
 
-async function mentorshipEmail(Name, Email, industry, uniqueId) {
-    const msg = {
-      to: Email, // Change to your recipient
-      from: VERIFIED_EMAIL, // Change to your verified sender
-      subject: "Booking Confirmation",
-      html: `<h1>Dear ${Name},</h1>
-          <p>request for <b>${industry}</b> event has been <b>Confirmed</b></p>
-          <p>You will be sent an email or get a call from the mentor within 24hrs</p>
-          <p>After you get intouch with the mentor pls click the link below to comfirm your request</p>
-          <p>http://localhost:7000/api/mentor/comfirm/?uniqueId=${uniqueId}</p>`,
-    };
-  
-   try {
-          const result = await sgMail
-              .send(msg);
-          return result;
-      } catch (error) {
-          // Log friendly error
-          console.error(error);
-  
-          if (error.response) {
-              // Extract error msg
-              const { message: message_1, code, response } = error;
-  
-              // Extract response msg
-              const { headers, body } = response;
-  
-              console.error(body);
-          }
-      }
-  }
 
 async function sendEmailVerificationToken(email) {
   try {
@@ -223,7 +191,6 @@ module.exports = {
   SuccessfulPasswordReset,
   registrationSuccessful,
   sendResetPasswordToken,
-  bookingEmail,
+  bargainEmail,
   verificationCode,
-  mentorshipEmail
 };

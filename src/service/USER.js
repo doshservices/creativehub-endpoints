@@ -1,5 +1,5 @@
 const userSchema = require("../models/userModel");
-const { sendEmailToken } = require("../utils/sendgrid");
+const { sendEmailToken, registrationSuccessful, sendEmailVerificationToken } = require("../utils/sendgrid");
 const { throwError } = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
@@ -47,7 +47,7 @@ class User {
       newUser.verified = true;
     }
     console.log(this.data.email);
-    // await sendEmailToken(this.data.email, verificationCode);
+    await registrationSuccessful(this.data.email, newUser.firstName);
     return newUser;
   }
 
@@ -81,6 +81,7 @@ class User {
       if (user.role === USER_TYPE.USER) {
         user.verified = true;
         await user.save();
+        
       }
     }
     return user;
@@ -139,14 +140,14 @@ class User {
 
   async sendOtp() {
     const { email } = this.data;
-    const verificationCode = Math.floor(100000 + Math.random() * 100000);
-
     const user = await userSchema.findOne({ email });
     if (user) {
       user.otp = verificationCode;
-      await sendEmailToken(email, verificationCode);
+      await user.save()
+    return await sendEmailVerificationToken(email);
+       
     }
-    return "OTP SENT!";
+    return "EMAIL DOES NOT EXISTS IN OUR DB";
   }
 
   async forgotPassword() {
@@ -165,11 +166,11 @@ class User {
     if (!updateUser) {
       return throwError("Invalid Email");
     }
-      // await sendResetPasswordToken(
-      //   updateUser.email,
-      //   updateUser.firstName,
-      //   updateUser.otp
-      // );
+      await sendResetPasswordToken(
+        updateUser.email,
+        updateUser.firstName,
+        updateUser.otp
+      );
     
     return updateUser;
   }
@@ -190,7 +191,7 @@ class User {
     if (!updateUser) {
       throwError("Invalid OTP!");
     }
-    // await SuccessfulPasswordReset(updateUser.firstName, updateUser.email);
+    await SuccessfulPasswordReset(updateUser.firstName, updateUser.email);
     return updateUser;
   }
 

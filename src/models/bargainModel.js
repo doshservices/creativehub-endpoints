@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const validator = require("validator");
 const uniqueValidator = require("mongoose-unique-validator");
-const { throwError } = require("../utils/handleErrors");
-const { GENDER, bargain_TYPE, SERVICE_TYPE, SUBSCRITION_STATUS, ACCOUNT_STATUS } = require("../utils/constants");
+const { BARGAIN_STATUS } = require("../utils/constants");
 
 
 const Schema = new mongoose.Schema({
@@ -11,18 +8,30 @@ const Schema = new mongoose.Schema({
     type: String,
     required: true
   },
+  recieverId: {
+    type: mongoose.Types.ObjectId,
+    ref: 'user',
+    required: true
+  },
+  senderId: {
+    type: mongoose.Types.ObjectId,
+    ref: 'user',
+    required: true
+  },
   projectDescription: {
+    type: String,
+    required: true
+  },
+  proposedPrice: {
     type: String,
     required: true
   },
   status: {
     type: String,
-    enum: Object.keys(GENDER),
+    enum: Object.keys(BARGAIN_STATUS),
+    default: BARGAIN_STATUS.PENDING
   },
-  audio: {
-    type: String,
-  },
-})
+}, {timestamps: true}, {timeseries: true})
 
 
 

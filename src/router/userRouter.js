@@ -11,6 +11,8 @@ userRoute
 
 userRoute.route("/users/login").post(user.login);
 
+userRoute.route("/users/send-token").post(user.sendOtp);
+
 userRoute
   .route("/users/add-skills")
   .post(authenticate, user.updateUserDetails);

@@ -89,12 +89,12 @@ module.exports.getBargainByUserId = async (req, res) => {
 module.exports.reviewCreative = async (req, res) => {
   try {
     const { userId, stars, comment } = req.body;
-    const bargains = await new Creatives({
+    const reviews = await new Creatives({
       userId,
       stars,
       comment,
     }).reviewCreative();
-    return success(res, { bargains });
+    return success(res, { reviews });
   } catch (err) {
     return error(res, { code: err.code, message: err.message });
   }
@@ -103,10 +103,10 @@ module.exports.reviewCreative = async (req, res) => {
 module.exports.getUserReview = async (req, res) => {
   try {
     const { userId } = req.query;
-    const bargains = await new Creatives({
+    const reviews = await new Creatives({
       userId,
     }).getUserReview();
-    return success(res, { bargains });
+    return success(res, { reviews });
   } catch (err) {
     return error(res, { code: err.code, message: err.message });
   }

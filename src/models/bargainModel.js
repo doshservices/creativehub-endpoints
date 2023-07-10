@@ -31,7 +31,7 @@ const Schema = new mongoose.Schema({
     enum: Object.keys(BARGAIN_STATUS),
     default: BARGAIN_STATUS.PENDING
   },
-})
+}, {timestamps: true}, {timeseries: true})
 
 
 

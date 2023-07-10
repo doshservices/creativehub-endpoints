@@ -4,6 +4,7 @@ const { USER_TYPE, ACCOUNT_STATUS } = require("../utils/constants");
 const { initiatePaymentFlutterwave } = require("../integrations/flutterwave");
 const { throwError } = require("../utils/handleErrors");
 const reviewSchema = require("../models/reviewModel");
+const { bargainEmail } = require("../utils/sendgrid");
 
 class Creatives {
   constructor(data) {
@@ -76,9 +77,12 @@ class Creatives {
         name,
         bargain.senderId._id
       );
-      console.log({ pay });
+      await bargainEmail(name,email,pay.data.link, "ACCEPTED")
     }
-    return bargain;
+    else if (response === "DECLINED") {
+      
+    }
+    return "RESPONSE SENT!!";
   }
 
   // get bargains

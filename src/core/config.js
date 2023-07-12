@@ -22,6 +22,7 @@ module.exports = {
   PUBLIC_KEY: process.env.PUBLIC_KEY,
   SECRET_KEY: process.env.SECRET_KEY,
   BACKEND_BASE_URL: process.env.BACKEND_BASE_URL,
+  FRONTEND_BASE_URL: process.env.FRONTEND_BASE_URL,
   NOVU_BASE_URL: process.env.NOVU_BASE_URL,
-  NOVU_API_KEY: process.env.NOVU_API
+  NOVU_API_KEY: process.env.NOVU_API,
 };

@@ -1,5 +1,5 @@
 const userSchema = require("../models/userModel");
-const { sendEmailToken, registrationSuccessful, sendEmailVerificationToken } = require("../utils/sendgrid");
+const { sendResetPasswordToken, registrationSuccessful, sendEmailVerificationToken } = require("../utils/sendgrid");
 const { throwError } = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
@@ -46,8 +46,8 @@ class User {
     if (newUser.googleSigned === true && newUser.role === "USER") {
       newUser.verified = true;
     }
-    console.log(this.data.email);
-    await registrationSuccessful(this.data.email, newUser.firstName);
+    const name = `${newUser.firstName} ${newUser.lastNmae}`;
+    await registrationSuccessful(this.data.email, name);
     return newUser;
   }
 
@@ -140,14 +140,7 @@ class User {
 
   async sendOtp() {
     const { email } = this.data;
-    const user = await userSchema.findOne({ email });
-    if (user) {
-      user.otp = verificationCode;
-      await user.save()
     return await sendEmailVerificationToken(email);
-       
-    }
-    return "EMAIL DOES NOT EXISTS IN OUR DB";
   }
 
   async forgotPassword() {

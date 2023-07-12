@@ -1,0 +1,93 @@
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at sendOtp email is not defined","stack":"ReferenceError: email is not defined\n    at User.sendOtp (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:142:45)\n    at module.exports.sendOtp (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:71:44)\n    at Layer.handle [as handle_request] (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/layer.js:95:5)\n    at /home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:175:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred sending token userSchema is not defined","stack":"ReferenceError: userSchema is not defined\n    at sendEmailVerificationToken (/home/ezra/dev/creativehub-endpoints/src/utils/sendgrid.js:174:19)\n    at User.sendOtp (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:143:18)\n    at module.exports.sendOtp (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:71:44)\n    at Layer.handle [as handle_request] (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/route.js:144:13)\n    at Route.dispatch (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/route.js:114:3)\n    at Layer.handle [as handle_request] (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/layer.js:95:5)\n    at /home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/index.js:280:10)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at forgotPassword Invalid Email"}
+{"level":"error","message":"Error occurred at forgotPassword sendResetPasswordToken is not defined","stack":"ReferenceError: sendResetPasswordToken is not defined\n    at User.forgotPassword (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:162:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}

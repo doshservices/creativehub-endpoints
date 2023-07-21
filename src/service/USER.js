@@ -5,6 +5,8 @@ const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
 const bcrypt = require("bcrypt");
 const util = require("../utils/util");
+const bankSchema = require("../models/bankModel");
+const { getBanks } = require("../integrations/flutterwave");
 
 class User {
   constructor(data) {
@@ -188,7 +190,19 @@ class User {
     return updateUser;
   }
 
- 
+  async getBanks() {
+    return await getBanks()
+  }
+
+ async addBank() {
+  return await new bankSchema({
+    userId: this.data.userId,
+    bankName: this.data.bankName,
+    accountName: this.data.accountName,
+    accountNumber: this.data.accountNumber,
+    bankCode: this.data.bankCode
+  }).save()
+ }
 
   
 }

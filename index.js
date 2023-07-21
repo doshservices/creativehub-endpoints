@@ -4,6 +4,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 // Custom Dependencies
+require("./src/schedule/cronjob");
 const { logger } = require('./src/utils/logger');
 const { PORT } = require('./src/core/config');
 

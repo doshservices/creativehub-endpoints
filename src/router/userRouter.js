@@ -25,6 +25,9 @@ userRoute.route("/users/forgot-password").post(authenticate, user.forgotPassword
 
 userRoute.route("/users/reset-password").post(authenticate, user.resetPassword);
 
+userRoute.route("/users/get-banks").get( user.getBanks);
+
+userRoute.route("/users/add-bank").post(authenticate, user.addBank);
 
 userRoute.route("/users/:userId").get(user.getUserById);
 

@@ -113,6 +113,34 @@ module.exports.unfollowUser = async (req, res) => {
   }
 };
 
+module.exports.getBanks = async (req, res) => {
+  try {
+    const banks = await new User({}).getBanks();
+    return success(res, { banks });
+  } catch (err) {
+    logger.error("Error occurred at getBanks", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
+module.exports.addBank = async (req, res) => {
+  try {
+    const { accountName, bankName, accountNumber, bankCode } = req.body;
+    const userId = req.user._id;
+    const bank = await new User({
+      userId,
+      accountName,
+      bankName,
+      accountNumber,
+      bankCode,
+    }).addBank();
+    return success(res, { bank }, "Bank Details Has Been Saved");
+  } catch (err) {
+    logger.error("Error occurred at addBank", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
 exports.forgotPassword = (req, res) => {
   new User(req.body)
     .forgotPassword()

@@ -14,6 +14,7 @@ module.exports = {
   PLAN_ID: process.env.PLAN_ID,
   FLW_PUBLIC_KEY: process.env.FLW_PUBLIC_KEY,
   FLW_SECRET_KEY: process.env.FLW_SECRET_KEY,
+  FLUTTER_BASE_URL: process.env.FLUTTER_BASE_URL,
   REDIS_URL: process.env.REDIS_URL,
   OTP_DURATION: process.env.OTP_DURATION,
   KOBO_RATE: process.env.KOBO_RATE,

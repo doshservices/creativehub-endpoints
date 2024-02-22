@@ -1,6 +1,10 @@
 const userSchema = require("../models/userModel");
-const { sendResetPasswordToken, registrationSuccessful, sendEmailVerificationToken } = require("../utils/sendgrid");
-const { throwError } = require("../utils/handleErrors");
+const {
+  sendResetPasswordToken,
+  registrationSuccessful,
+  sendEmailVerificationToken,
+} = require("../utils/sendgrid");
+const { throwError, handleCastErrorExceptionForInvalidObjectId } = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
 const bcrypt = require("bcrypt");
@@ -43,14 +47,16 @@ class User {
     await Promise.all([this.emailExist(), this.phoneNumberExist()]);
     if (this.errors.length) {
       throwError(this.errors);
+    } else {
+      const newUser = await userSchema.create(data);
+      if (newUser.googleSigned === true && newUser.role === "USER") {
+        newUser.verified = true;
+        await newUser.save();
+      }
+      const name = `${newUser.firstName} ${newUser.lastNmae}`;
+      await registrationSuccessful(this.data.email, name);
+      return newUser;
     }
-    const newUser = await new userSchema(data).save();
-    if (newUser.googleSigned === true && newUser.role === "USER") {
-      newUser.verified = true;
-    }
-    const name = `${newUser.firstName} ${newUser.lastNmae}`;
-    await registrationSuccessful(this.data.email, name);
-    return newUser;
   }
 
   async login() {
@@ -68,55 +74,58 @@ class User {
   }
 
   async getAllUsers() {
-    return await userSchema.find({}).exec();
+    const user = await userSchema.find({});
+    if (!user) throwError("Users Not Found!", 404);
+    return user;
   }
 
   async getUserById() {
     const { userId } = this.data;
-    return await userSchema.findOne({ _id: userId }).exec();
+    const user = await userSchema.findOne({ _id: userId });
+    if (!user) handleCastErrorExceptionForInvalidObjectId();
+    return user;
   }
 
   async verifyUser() {
-    const { otp, userId } = this.data;
-    const user = await userSchema.findOne({ _id: userId });
-    if (otp === user.otp) {
-      if (user.role === USER_TYPE.USER) {
-        user.verified = true;
-        await user.save();
-        
-      }
-    }
+    const { otp } = this.data;
+    const user = await userSchema
+      .findOne({ otp })
+      if (!user) throwError("Invalid Otp", 400);
+
+    user.verified = true;
+    user.otp = null
+    await user.save();
+
     return user;
   }
-  
+
   async updateUserDetails() {
-  const { newDetails, oldDetails } = this.data;
-  const updates = Object.keys(newDetails);
-  console.log(updates);
-  const allowedUpdates = [
-    "firstName",
-    "lastName",
-    "phoneNumber",
-    "country",
-    "location",
-    "gender",
-    "skills",
-    "bio",
-    "profilePicture",
-    "validId",
-    "languages",
-    "certificates",
-    "urls",
-    "hourlyRate",
-    "status"
-  ];
-  return await util.performUpdate(
-    updates,
-    newDetails,
-    allowedUpdates,
-    oldDetails
-  );
-}
+    const { newDetails, oldDetails } = this.data;
+    const updates = Object.keys(newDetails);
+    const allowedUpdates = [
+      "firstName",
+      "lastName",
+      "phoneNumber",
+      "country",
+      "location",
+      "gender",
+      "skills",
+      "bio",
+      "profilePicture",
+      "validId",
+      "languages",
+      "certificates",
+      "urls",
+      "hourlyRate",
+      "status",
+    ];
+    return await util.performUpdate(
+      updates,
+      newDetails,
+      allowedUpdates,
+      oldDetails
+    );
+  }
 
   async followUser() {
     const { userId, followerId } = this.data;
@@ -161,12 +170,12 @@ class User {
     if (!updateUser) {
       return throwError("Invalid Email");
     }
-      await sendResetPasswordToken(
-        updateUser.email,
-        updateUser.firstName,
-        updateUser.otp
-      );
-    
+    await sendResetPasswordToken(
+      updateUser.email,
+      updateUser.firstName,
+      updateUser.otp
+    );
+
     return updateUser;
   }
 
@@ -191,20 +200,18 @@ class User {
   }
 
   async getBanks() {
-    return await getBanks()
+    return await getBanks();
   }
 
- async addBank() {
-  return await new bankSchema({
-    userId: this.data.userId,
-    bankName: this.data.bankName,
-    accountName: this.data.accountName,
-    accountNumber: this.data.accountNumber,
-    bankCode: this.data.bankCode
-  }).save()
- }
-
-  
+  async addBank() {
+    return await new bankSchema({
+      userId: this.data.userId,
+      bankName: this.data.bankName,
+      accountName: this.data.accountName,
+      accountNumber: this.data.accountNumber,
+      bankCode: this.data.bankCode,
+    }).save();
+  }
 }
 
 module.exports = User;

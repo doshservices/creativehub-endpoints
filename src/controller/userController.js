@@ -15,7 +15,7 @@ module.exports.signup = async (req, res) => {
     return success(res, { user, token });
   } catch (err) {
     logger.error("Error occurred at signup", err);
-    return error(res, { code: err.code, message: err.message });
+     error(res, { code: err.code, message: err.message });
   }
 };
 
@@ -56,8 +56,7 @@ module.exports.getUserById = async (req, res) => {
 
 module.exports.verifyUserEmail = async (req, res) => {
   try {
-    const userId = req.user._id;
-    const user = await new User({ otp: req.body.otp, userId }).verifyUser();
+    const user = await new User({ otp: req.body.otp }).verifyUser();
     return success(res, { user }, "user Email has been verified");
   } catch (err) {
     logger.error("Error occurred at verifyUserEmail", err);

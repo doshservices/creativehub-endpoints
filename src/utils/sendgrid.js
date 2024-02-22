@@ -1,9 +1,13 @@
-const { SENDGRID_API_KEY, VERIFIED_EMAIL, FRONTEND_BASE_URL } = require("../core/config");
+const {
+  SENDGRID_API_KEY,
+  VERIFIED_EMAIL,
+  FRONTEND_BASE_URL,
+} = require("../core/config");
 const sgMail = require("@sendgrid/mail");
-const moment = require("moment");
 sgMail.setApiKey(SENDGRID_API_KEY);
 const { logger } = require("../utils/logger");
 const userSchema = require("../models/userModel");
+const { throwError } = require("./handleErrors");
 const verificationCode = Math.floor(100000 + Math.random() * 100000);
 
 async function sendEmailToken(Email, otp) {
@@ -16,12 +20,13 @@ async function sendEmailToken(Email, otp) {
     },
     template_id: "d-70aad94b16b94260a58d1aaac3a290e8",
   };
- return sgMail
+  return sgMail
     .send(msg)
-    .then((result) => { 
-      return result
-  })
-    .catch((error) => {      if (error.response) {
+    .then((result) => {
+      return result;
+    })
+    .catch((error) => {
+      if (error.response) {
         const { response } = error;
         const { body } = response;
         return body;
@@ -29,17 +34,17 @@ async function sendEmailToken(Email, otp) {
     });
 }
 
-async function  sendResetPasswordToken(Email, firstName, otp) {
+async function sendResetPasswordToken(Email, firstName, otp) {
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
     subject: "Password Reset Token",
-    template_id: 'd-40994e2030b74f369e27a441394f3f86',
+    template_id: "d-40994e2030b74f369e27a441394f3f86",
     dynamic_template_data: {
       otp: otp,
     },
   };
- return sgMail
+  return sgMail
     .send(msg)
     .then((result) => {
       return result;
@@ -85,8 +90,7 @@ function passwordEmail(Name, Email, link) {
 
   return sgMail
     .send(msg)
-    .then((result) => {
-    })
+    .then((result) => {})
     .catch((error) => {
       // Log friendly error
       if (error.response) {
@@ -95,7 +99,6 @@ function passwordEmail(Name, Email, link) {
 
         // Extract response msg
         const { headers, body } = response;
-
       }
     });
 }
@@ -108,7 +111,7 @@ function SuccessfulPasswordReset(Name, Email) {
     html: ``,
   };
 
- return sgMail
+  return sgMail
     .send(msg)
     .then((result) => {
       return result;
@@ -121,7 +124,6 @@ function SuccessfulPasswordReset(Name, Email) {
 
         // Extract response msg
         const { headers, body } = response;
-
       }
     });
 }
@@ -137,61 +139,47 @@ async function bargainEmail(Name, Email, CheckOut, Response) {
         <a href="${CheckOut}">${CheckOut}</a>`,
   };
 
- try {
-        const result = await sgMail
-            .send(msg);
-        return result;
-    } catch (error) {
-        // Log friendly error
-        console.error(error);
+  try {
+    const result = await sgMail.send(msg);
+    return result;
+  } catch (error) {
+    // Log friendly error
+    console.error(error);
 
-        if (error.response) {
-            // Extract error msg
-            const { message: message_1, code, response } = error;
+    if (error.response) {
+      // Extract error msg
+      const { message: message_1, code, response } = error;
 
-            // Extract response msg
-            const { headers, body } = response;
+      // Extract response msg
+      const { headers, body } = response;
 
-            console.error(body);
-        }
+      console.error(body);
     }
+  }
 }
-
 
 async function sendEmailVerificationToken(email) {
   try {
     const verificationCode1 = Math.floor(100000 + Math.random() * 100000);
-     const user = await userSchema.findOne({ email });
-     if (user) {
-       user.otp = verificationCode;
-       await user.save();
-    await sendEmailToken(email, verificationCode1);
-     return {
-       message: `OTP Message sent to ${email} successfully`,
-       data: "success",
-       status: 200,
-      //  code: verificationCode1,
-     };
-     }
-     return {
-       message: `EMAIL ${email} DOES NOT EXISTS IN OUR DB`,
-       data: "error",
-       status: 404,
-       //  code: verificationCode1,
-     };
-   
+    const user = await userSchema.findOne({ email });
+    if (user) {
+      user.otp = verificationCode1;
+      await user.save();
+      await sendEmailToken(email, verificationCode1);
+      return {
+        message: `OTP Message sent to ${email} successfully`,
+        status: 200,
+      };
+    }
+    throwError(`Email ${email} Does Not Exists`, 404);
   } catch (error) {
     logger.error("Error occurred sending token", error);
-    return {
-      message: `Error occurred sending OTP Message to ${email}`,
-      data: error.message,
-      status: 500,
-    };
+    return throwError(error.message, error.code);
   }
 }
 
 module.exports = {
-    sendEmailToken,
+  sendEmailToken,
   sendEmailVerificationToken,
   passwordEmail,
   SuccessfulPasswordReset,

@@ -1,0 +1,177 @@
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:35:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:37:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:36:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:36:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:36:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:36:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:37:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:37:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:37:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:38:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:39:3)"}

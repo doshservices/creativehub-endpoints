@@ -6,7 +6,7 @@ userRoute
   .route("/users")
   .post(user.signup)
   .get(user.getAllUsers)
-  .patch(authenticate, user.verifyUserEmail);
+  .patch(user.verifyUserEmail);
 
 
 userRoute.route("/users/login").post(user.login);

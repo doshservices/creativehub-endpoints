@@ -21,7 +21,7 @@ class Creatives {
   // search creatives
   async searchCreatives() {
     const { gender, skill, country, location } = this.data;
-
+    console.log({ skill });
     let query = {
       $or: [
         {
@@ -34,7 +34,7 @@ class Creatives {
           gender,
         },
         {
-          skill: new RegExp(skill, "i"),
+          skill,
         },
       ],
       $and: [

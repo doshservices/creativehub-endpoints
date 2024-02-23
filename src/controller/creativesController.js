@@ -13,6 +13,7 @@ module.exports.getAllCreatives = async (req, res) => {
 module.exports.searchCreatives = async (req, res) => {
   try {
     const { skill, location, country, gender } = req.query;
+    console.log("hi");
     const creatives = await new Creatives({
       skill,
       location,
@@ -20,7 +21,9 @@ module.exports.searchCreatives = async (req, res) => {
       gender,
     }).searchCreatives();
     return success(res, { creatives });
-  } catch (err) {}
+  } catch (err) {
+    return error(res, { code: err.code, message: err.message });
+  }
 };
 
 module.exports.sendBargain = async (req, res) => {

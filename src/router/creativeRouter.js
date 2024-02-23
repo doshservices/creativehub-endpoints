@@ -1,12 +1,15 @@
 const creativeRouter = require("../core/routerConfig");
 const Creatives = require("../controller/creativesController");
 const { authenticate } = require("../core/userAuth");
+const { redisCacheMiddleware } = require("../core/redis");
 
-creativeRouter.route("/creatives").get(authenticate, Creatives.getAllCreatives);
+creativeRouter
+  .route("/creatives")
+  .get(authenticate, redisCacheMiddleware(), Creatives.getAllCreatives);
 
 creativeRouter
   .route("/creatives/search")
-  .get(authenticate, Creatives.searchCreatives);
+  .get(authenticate, redisCacheMiddleware(), Creatives.searchCreatives);
 
 creativeRouter
   .route("/creatives/bargain")

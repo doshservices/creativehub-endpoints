@@ -1,0 +1,147 @@
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login connection <monitor> to 3.88.250.235:27017 timed out","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":"7fffffff0000000000000105","maxSetVersion":22,"servers":{},"setName":"atlas-xhjjen-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: connection <monitor> to 3.88.250.235:27017 timed out\n    at EventTarget.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongodb/lib/sdam/topology.js:276:34)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:757:20)\n    at EventTarget.dispatchEvent (node:internal/event_target:692:26)\n    at abortSignal (node:internal/abort_controller:369:10)\n    at TimeoutController.abort (node:internal/abort_controller:403:5)\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongodb/lib/utils.js:1011:92)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Failed to cache data for key=/users/login@e6257a154122b58b64475b40a327339da9c8fc61 redisClient.Set is not a function","stack":"TypeError: redisClient.Set is not a function\n    at writeData (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:40:25)\n    at res.send (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:85:13)\n    at success (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at module.exports.login (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:30:12)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Failed to cache data for key=/users/login@e6257a154122b58b64475b40a327339da9c8fc61 Invalid argument type","stack":"TypeError: Invalid argument type\n    at encodeCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)\n    at RedisCommandsQueue.getCommandToSend (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)\n    at Commander._RedisClient_tick (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:535:76)\n    at Commander._RedisClient_sendCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:522:82)\n    at Commander.commandsExecutor (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:190:154)\n    at BaseClass.<computed> [as set] (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/commander.js:8:29)\n    at writeData (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:40:25)\n    at res.send (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:85:13)\n    at success (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at module.exports.login (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:30:12)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Failed to cache data for key=/users/login@e6257a154122b58b64475b40a327339da9c8fc61 Invalid argument type","stack":"TypeError: Invalid argument type\n    at encodeCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)\n    at RedisCommandsQueue.getCommandToSend (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)\n    at Commander._RedisClient_tick (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:535:76)\n    at Commander._RedisClient_sendCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:522:82)\n    at Commander.commandsExecutor (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:190:154)\n    at BaseClass.<computed> [as hSet] (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/commander.js:8:29)\n    at writeData (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:40:25)\n    at res.send (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:85:13)\n    at success (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at module.exports.login (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:30:12)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Failed to cache data for key=/users/login@e6257a154122b58b64475b40a327339da9c8fc61 Invalid argument type","stack":"TypeError: Invalid argument type\n    at encodeCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)\n    at RedisCommandsQueue.getCommandToSend (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)\n    at Commander._RedisClient_tick (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:535:76)\n    at Commander._RedisClient_sendCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:522:82)\n    at Commander.commandsExecutor (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:190:154)\n    at BaseClass.<computed> [as hSet] (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/commander.js:8:29)\n    at writeData (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:40:25)\n    at res.send (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:85:13)\n    at success (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at module.exports.login (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:30:12)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Failed to cache data for key=/users/login@e6257a154122b58b64475b40a327339da9c8fc61 Invalid argument type","stack":"TypeError: Invalid argument type\n    at encodeCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/RESP2/encoder.js:17:19)\n    at RedisCommandsQueue.getCommandToSend (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/commands-queue.js:138:45)\n    at Commander._RedisClient_tick (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:535:76)\n    at Commander._RedisClient_sendCommand (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:522:82)\n    at Commander.commandsExecutor (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/client/index.js:190:154)\n    at BaseClass.<computed> [as hSet] (/home/ezra/dev/creativehub-endpoints/node_modules/@redis/client/dist/lib/commander.js:8:29)\n    at writeData (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:40:25)\n    at res.send (/home/ezra/dev/creativehub-endpoints/src/core/redis.js:85:13)\n    at success (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at module.exports.login (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:30:12)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Connected To Redis Successfully!!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}

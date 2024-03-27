@@ -2,6 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
+const { initializeRedisClient } = require("./src/core/redis");
 
 // Custom Dependencies
 require("./src/schedule/cronjob");
@@ -21,10 +22,13 @@ app.use(morgan("tiny"));
 // middlewares
 const user = require("./src/router/userRouter");
 const creatives = require("./src/router/creativeRouter");
-const { initializeRedisClient } = require("./src/core/redis");
+const bank = require("./src/router/bankRouter");
+const wallet = require("./src/router/walletRouter");
 
 app.use("/api/", user);
 app.use("/api/", creatives);
+app.use("/api/", bank);
+app.use("/api/", wallet);
 
 app.get("/", (req, res) => {
   res

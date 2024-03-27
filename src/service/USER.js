@@ -4,13 +4,17 @@ const {
   registrationSuccessful,
   sendEmailVerificationToken,
 } = require("../utils/sendgrid");
-const { throwError, handleCastErrorExceptionForInvalidObjectId } = require("../utils/handleErrors");
+const {
+  throwError,
+  handleCastErrorExceptionForInvalidObjectId,
+} = require("../utils/handleErrors");
 const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
 const bcrypt = require("bcrypt");
 const util = require("../utils/util");
 const bankSchema = require("../models/bankModel");
 const { getBanks } = require("../integrations/flutterwave");
+const Wallet = require("./WALLET");
 
 class User {
   constructor(data) {
@@ -41,22 +45,18 @@ class User {
   async signup() {
     const data = this.data;
     const verificationCode = Math.floor(100000 + Math.random() * 100000);
-    if (data.googleSigned === false) {
-      data.otp = verificationCode;
-    }
     await Promise.all([this.emailExist(), this.phoneNumberExist()]);
     if (this.errors.length) {
       throwError(this.errors);
-    } else {
-      const newUser = await userSchema.create(data);
-      if (newUser.googleSigned === true && newUser.role === "USER") {
-        newUser.verified = true;
-        await newUser.save();
-      }
-      const name = `${newUser.firstName} ${newUser.lastNmae}`;
-      await registrationSuccessful(this.data.email, name);
-      return newUser;
     }
+    if (data.googleSigned) {
+      data.verified = true;
+    }
+    const newUser = await userSchema.create(data);
+    await new Wallet({ userId: newUser._id }).createWallet();
+    const name = `${newUser.firstName} ${newUser.lastName}`;
+    await registrationSuccessful(this.data.email, name);
+    return newUser;
   }
 
   async login() {
@@ -88,12 +88,11 @@ class User {
 
   async verifyUser() {
     const { otp } = this.data;
-    const user = await userSchema
-      .findOne({ otp })
-      if (!user) throwError("Invalid Otp", 400);
+    const user = await userSchema.findOne({ otp });
+    if (!user) throwError("Invalid Otp", 400);
 
     user.verified = true;
-    user.otp = null
+    user.otp = null;
     await user.save();
 
     return user;
@@ -197,20 +196,6 @@ class User {
     }
     await SuccessfulPasswordReset(updateUser.firstName, updateUser.email);
     return updateUser;
-  }
-
-  async getBanks() {
-    return await getBanks();
-  }
-
-  async addBank() {
-    return await new bankSchema({
-      userId: this.data.userId,
-      bankName: this.data.bankName,
-      accountName: this.data.accountName,
-      accountNumber: this.data.accountNumber,
-      bankCode: this.data.bankCode,
-    }).save();
   }
 }
 

@@ -18,6 +18,10 @@ creativeRouter
   .get(authenticate, Creatives.getBargains);
 
 creativeRouter
+  .route("/creatives/bargain/verify-pay")
+  .get(authenticate, Creatives.verifyBargainPayment);
+
+creativeRouter
   .route("/creatives/review/")
   .post(authenticate, Creatives.reviewCreative)
   .get(authenticate, Creatives.getUserReview);

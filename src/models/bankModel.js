@@ -18,6 +18,10 @@ const schema = new Schema({
   bankCode: {
     type: String,
   },
+  isDefaultBank: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const bankSchema = model("bank", schema)

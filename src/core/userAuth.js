@@ -85,6 +85,7 @@ function permit(roles) {
     next();
   };
 }
+
 // Permission for only superAdmin
 function permitSuperAdmin(req, res, next) {
     if (req.user.role !== ADMIN_ROLES.SUPER_ADMIN) {

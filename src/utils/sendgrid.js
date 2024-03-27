@@ -7,7 +7,9 @@ const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(SENDGRID_API_KEY);
 const { logger } = require("../utils/logger");
 const userSchema = require("../models/userModel");
+const moment = require("moment");
 const { throwError } = require("./handleErrors");
+const { BARGAIN_STATUS } = require("./constants");
 const verificationCode = Math.floor(100000 + Math.random() * 100000);
 
 async function sendEmailToken(Email, otp) {
@@ -128,15 +130,97 @@ function SuccessfulPasswordReset(Name, Email) {
     });
 }
 
+async function requestBargainEmail(
+  Name,
+  Email,
+  SenderName,
+  ProposedPrice,
+  Description
+) {
+  const msg = {
+    to: Email, // Change to your recipient
+    from: VERIFIED_EMAIL, // Change to your verified sender
+    subject: "Bargain Request",
+    html: `<h3>Dear ${Name},</h3>
+        <p>${SenderName} is in need of your services and have bargained for ${ProposedPrice} per hour. Let him know your decision</p>
+        <br>
+        <br>
+        <h3>Service Description</h3>
+        <p>${Description}</p>
+        <br>
+        <br>
+        <h3>Proposed Price</h3>
+        <p> ${ProposedPrice} </p>
+        <p>Please click on the button below to let him know your decison.</p>
+        <button style="background: purple; color: white;">Accept</button>
+        <button style="background: white; color: purple;">Decline</button>
+        <p>Thanks,
+Creatives Hub Team.</p>
+        `,
+  };
+
+  try {
+    const result = await sgMail.send(msg);
+    return result;
+  } catch (error) {
+    // Log friendly error
+    console.error(error);
+
+    if (error.response) {
+      // Extract error msg
+      const { message: message_1, code, response } = error;
+
+      // Extract response msg
+      const { headers, body } = response;
+
+      console.error(body);
+    }
+  }
+}
+
+async function bargainPaidEmail(Name, Email, Amount, Sender) {
+  const msg = {
+    to: Email, // Change to your recipient
+    from: VERIFIED_EMAIL, // Change to your verified sender
+    subject: `Bargain Payment`,
+    html: `<h3>Dear ${Name},</h3>
+        <p>${Amount} has been paid to your wallet by ${Sender}</p>
+        `,
+  };
+
+  try {
+    const result = await sgMail.send(msg);
+    return result;
+  } catch (error) {
+    // Log friendly error
+    console.error(error);
+
+    if (error.response) {
+      // Extract error msg
+      const { message: message_1, code, response } = error;
+
+      // Extract response msg
+      const { headers, body } = response;
+
+      console.error(body);
+    }
+  }
+}
+
 async function bargainEmail(Name, Email, CheckOut, Response) {
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
-    subject: "Bargain Confirmation",
-    html: `<h1>Dear ${Name},</h1>
+    subject: `Bargain ${Response}`,
+    html: `<h3>Dear ${Name},</h3>
         <p>Your bargain has been ${Response}</p>
+        ${
+          CheckOut
+            ? `
         <p>click the link below to pay for the service</p>
-        <a href="${CheckOut}">${CheckOut}</a>`,
+        <a href="${CheckOut}">${CheckOut}</a>`
+            : ""
+        }`,
   };
 
   try {
@@ -186,5 +270,7 @@ module.exports = {
   registrationSuccessful,
   sendResetPasswordToken,
   bargainEmail,
+  requestBargainEmail,
+  bargainPaidEmail,
   verificationCode,
 };

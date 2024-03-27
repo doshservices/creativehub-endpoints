@@ -13,7 +13,6 @@ module.exports.getAllCreatives = async (req, res) => {
 module.exports.searchCreatives = async (req, res) => {
   try {
     const { skill, location, country, gender } = req.query;
-    console.log("hi");
     const creatives = await new Creatives({
       skill,
       location,
@@ -23,7 +22,7 @@ module.exports.searchCreatives = async (req, res) => {
     return success(res, { creatives });
   } catch (err) {
     return error(res, { code: err.code, message: err.message });
-  }
+  } 
 };
 
 module.exports.sendBargain = async (req, res) => {
@@ -46,12 +45,20 @@ module.exports.sendBargain = async (req, res) => {
 module.exports.acceptBargain = async (req, res) => {
   try {
     const { response, id } = req.query;
-    // const id = req.user._id
-    console.log({ id, response });
     const creatives = await new Creatives({
       id,
       response,
+      userId: req.user._id,
     }).acceptBargain();
+    return success(res, { creatives });
+  } catch (err) {
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
+module.exports.verifyBargainPayment = async (req, res) => {
+  try {
+    const creatives = await new Creatives(req.query.ref).verifyBargainPayment();
     return success(res, { creatives });
   } catch (err) {
     return error(res, { code: err.code, message: err.message });
@@ -115,3 +122,4 @@ module.exports.getUserReview = async (req, res) => {
     return error(res, { code: err.code, message: err.message });
   }
 };
+ 

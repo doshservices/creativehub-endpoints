@@ -5,11 +5,15 @@ const { redisCacheMiddleware } = require("../core/redis");
 
 creativeRouter
   .route("/creatives")
-  .get(authenticate, redisCacheMiddleware(), Creatives.getAllCreatives);
+  .get(authenticate,
+    //  redisCacheMiddleware(), 
+     Creatives.getAllCreatives);
 
 creativeRouter
   .route("/creatives/search")
-  .get(authenticate, redisCacheMiddleware(), Creatives.searchCreatives);
+  .get(authenticate, 
+    // redisCacheMiddleware(), 
+    Creatives.searchCreatives);
 
 creativeRouter
   .route("/creatives/bargain")

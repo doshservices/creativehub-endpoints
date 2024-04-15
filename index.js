@@ -42,7 +42,7 @@ require("./src/db/mongoose")
   .db()
   .then(async () =>{
     // connect to redis
-    await initializeRedisClient()
+    // await initializeRedisClient()
     app.listen(PORT, () =>
       logger.info(`Creatives Backend Service Started on port ${PORT}`)
     );

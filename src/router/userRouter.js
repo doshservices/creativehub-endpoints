@@ -9,7 +9,9 @@ userRoute
   .get(user.getAllUsers)
   .patch(user.verifyUserEmail);
 
-userRoute.route("/users/login").post(redisCacheMiddleware(), user.login);
+userRoute.route("/users/login").post(
+  // redisCacheMiddleware(), 
+  user.login);
 
 userRoute.route("/users/send-token").post(user.sendOtp);
 
@@ -29,6 +31,8 @@ userRoute.route("/users/get-banks").get(user.getBanks);
 
 userRoute.route("/users/add-bank").post(authenticate, user.addBank);
 
-userRoute.route("/users/:userId").get(redisCacheMiddleware(), user.getUserById);
+userRoute.route("/users/:userId").get(
+  // redisCacheMiddleware(), 
+  user.getUserById);
 
 module.exports = userRoute;

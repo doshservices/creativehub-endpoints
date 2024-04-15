@@ -3,7 +3,7 @@ const bankRoute = require("../core/routerConfig");
 const bankController = require("../controller/bankController");
 const { authenticate, permit } = require("../core/userAuth");
 const { USER_TYPE } = require("../utils/constants");
-const { redisCacheMiddleware } = require("../core/redis");
+// const { redisCacheMiddleware } = require("../core/redis");
 
 bankRoute
   .route("/banks")
@@ -19,7 +19,7 @@ bankRoute
   .get(
     authenticate,
     permit(Object.keys(USER_TYPE)),
-    redisCacheMiddleware(),
+    // redisCacheMiddleware(),
     bankController.getBankList
   );
 
@@ -28,7 +28,7 @@ bankRoute
   .get(
     authenticate,
     permit(Object.keys(USER_TYPE)),
-    redisCacheMiddleware(),
+    // redisCacheMiddleware(),
     bankController.getDefaultBank
   );
 
@@ -37,7 +37,7 @@ bankRoute
   .get(
     authenticate,
     permit(Object.keys(USER_TYPE)),
-    redisCacheMiddleware(),
+    // redisCacheMiddleware(),
     bankController.getBank
   )
   .put(

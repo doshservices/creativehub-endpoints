@@ -15,7 +15,7 @@ module.exports.signup = async (req, res) => {
     return success(res, { user, token });
   } catch (err) {
     logger.error("Error occurred at signup", err);
-    return error(res, { code: err.code, message: err.message });
+     error(res, { code: err.code, message: err.message });
   }
 };
 
@@ -56,8 +56,7 @@ module.exports.getUserById = async (req, res) => {
 
 module.exports.verifyUserEmail = async (req, res) => {
   try {
-    const userId = req.user._id;
-    const user = await new User({ otp: req.body.otp, userId }).verifyUser();
+    const user = await new User({ otp: req.body.otp }).verifyUser();
     return success(res, { user }, "user Email has been verified");
   } catch (err) {
     logger.error("Error occurred at verifyUserEmail", err);
@@ -109,6 +108,34 @@ module.exports.unfollowUser = async (req, res) => {
     return success(res, { user }, "You unfollowed this user");
   } catch (err) {
     logger.error("Error occurred at followUser", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
+module.exports.getBanks = async (req, res) => {
+  try {
+    const banks = await new User({}).getBanks();
+    return success(res, { banks });
+  } catch (err) {
+    logger.error("Error occurred at getBanks", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
+module.exports.addBank = async (req, res) => {
+  try {
+    const { accountName, bankName, accountNumber, bankCode } = req.body;
+    const userId = req.user._id;
+    const bank = await new User({
+      userId,
+      accountName,
+      bankName,
+      accountNumber,
+      bankCode,
+    }).addBank();
+    return success(res, { bank }, "Bank Details Has Been Saved");
+  } catch (err) {
+    logger.error("Error occurred at addBank", err);
     return error(res, { code: err.code, message: err.message });
   }
 };

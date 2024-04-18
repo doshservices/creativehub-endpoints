@@ -99,7 +99,7 @@ const Schema = new mongoose.Schema({
     enum: Object.keys(SUBSCRITION_STATUS),
     default: SUBSCRITION_STATUS.PENDING
   }
-})
+}, {timestamps: true})
 
 
 Schema.pre('save', async function save(next) {

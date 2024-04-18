@@ -18,7 +18,6 @@ app.use(express.json());
 app.use(cors({ credentials: true, origin: "*" }));
 app.use(morgan("tiny"));
 
-
 // middlewares
 const user = require("./src/router/userRouter");
 const creatives = require("./src/router/creativeRouter");
@@ -40,11 +39,10 @@ app.get("/", (req, res) => {
 
 require("./src/db/mongoose")
   .db()
-  .then(async () =>{
+  .then(async () => {
     // connect to redis
     // await initializeRedisClient()
-    app.listen(PORT, () =>
+    app.listen(PORT, "0.0.0.0", () =>
       logger.info(`Creatives Backend Service Started on port ${PORT}`)
     );
-  }
-  );
+  });

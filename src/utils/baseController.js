@@ -7,6 +7,7 @@ class BaseController {
   
   }
   error(res, error) {
+    console.log(error.code);
     res.status(error.code || 400).json({
       status: 'error',
       message: error.message,

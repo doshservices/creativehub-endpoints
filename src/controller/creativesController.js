@@ -21,6 +21,7 @@ module.exports.searchCreatives = async (req, res) => {
     }).searchCreatives();
     return success(res, { creatives });
   } catch (err) {
+    console.log(err);
     return error(res, { code: err.code, message: err.message });
   } 
 };

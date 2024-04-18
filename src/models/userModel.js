@@ -98,8 +98,12 @@ const Schema = new mongoose.Schema({
     type: String,
     enum: Object.keys(SUBSCRITION_STATUS),
     default: SUBSCRITION_STATUS.PENDING
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now()
   }
-}, {timestamps: true})
+})
 
 
 Schema.pre('save', async function save(next) {

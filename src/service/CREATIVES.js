@@ -29,7 +29,7 @@ class Creatives {
   // search creatives
   async searchCreatives() {
     const { gender, skill, country, location } = this.data;
-    console.log({ skill, location });
+
     let query = {
       $or: [
         {
@@ -39,15 +39,15 @@ class Creatives {
           gender,
         },
         {
-          skill: { $in: skill },
+          skills: skill,
+        },
+        {
+          address: new RegExp(location, "i"),
         },
       ],
       $and: [
         {
           role: USER_TYPE.CREATIVE,
-        },
-        {
-          address: new RegExp(location, "i"),
         },
         {
           status: ACCOUNT_STATUS.ACTIVE,

@@ -1,10 +1,8 @@
 // /*eslint-disable*/
 var axios = require("axios");
-// const keys = require("../core/config");
-const FlutterSchema = require("../models/flutterModel");
 const userSchema = require("../models/userModel");
 const Flutterwave = require("flutterwave-node-v3");
-const { BACKEND_BASE_URL, FLW_SECRET_KEY, FLW_PUBLIC_KEY, PLAN_ID} = require("../core/config");
+const { BACKEND_BASE_URL, FLW_SECRET_KEY, FLW_PUBLIC_KEY, PLAN_ID, FLUTTER_BASE_URL} = require("../core/config");
 const { SUBSCRITION_STATUS } = require("../utils/constants");
 const flw = new Flutterwave(
  FLW_PUBLIC_KEY,
@@ -37,7 +35,7 @@ exports.initiatePaymentFlutterwave = async (
     });
     var config = {
       method: "post",
-      url: "https://api.flutterwave.com/v3/payments",
+      url: `${FLUTTER_BASE_URL}/payments`,
       headers: {
         Authorization: `Bearer ${FLW_SECRET_KEY}`,
         "Content-Type": "application/json",
@@ -96,4 +94,31 @@ exports.flutterResponse = async (req, res) => {
       }
     })
     .catch(err => console.log(err));
+};
+
+exports.getBanks = async() => {
+  var options = {
+    method: "GET",
+    url: `${FLUTTER_BASE_URL}/banks/NG`,
+    headers: {
+      Authorization: `Bearer ${FLW_SECRET_KEY}`,
+    },
+  };
+ const banks = await axios(options)
+ console.log({banks});
+ return banks.data;
+}
+
+exports.transfer = async (account_number, account_bank, amount, narration) => {
+  const details = {
+    account_bank: account_bank,
+    account_number: account_number,
+    amount: amount,
+    currency: "NGN",
+    narration: narration,
+    reference: generateTransactionReference(),
+  };
+ const transfer = await flw.Transfer.initiate(details);
+ console.log({transfer});
+ return transfer
 };

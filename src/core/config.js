@@ -14,6 +14,10 @@ module.exports = {
   PLAN_ID: process.env.PLAN_ID,
   FLW_PUBLIC_KEY: process.env.FLW_PUBLIC_KEY,
   FLW_SECRET_KEY: process.env.FLW_SECRET_KEY,
+  PAYSTACK_SECRET_KEY: process.env.PAYSTACK_SECRET_KEY,
+  PAYSTACK_PUBLIC_KEY: process.env.PAYSTACK_PUBLIC_KEY,
+  PAYSTACK_BASE_URL: process.env.PAYSTACK_BASE_URL,
+  FLUTTER_BASE_URL: process.env.FLUTTER_BASE_URL,
   REDIS_URL: process.env.REDIS_URL,
   OTP_DURATION: process.env.OTP_DURATION,
   KOBO_RATE: process.env.KOBO_RATE,
@@ -21,5 +25,8 @@ module.exports = {
   DAILY_CRON_SCHEDULE: process.env.DAILY_CRON_SCHEDULE,
   PUBLIC_KEY: process.env.PUBLIC_KEY,
   SECRET_KEY: process.env.SECRET_KEY,
-  BACKEND_BASE_URL: process.env.BACKEND_BASE_URL
+  BACKEND_BASE_URL: process.env.BACKEND_BASE_URL,
+  FRONTEND_BASE_URL: process.env.FRONTEND_BASE_URL,
+  NOVU_BASE_URL: process.env.NOVU_BASE_URL,
+  NOVU_API_KEY: process.env.NOVU_API,
 };

@@ -1,0 +1,406 @@
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:48:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:87:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:49:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:67:3)"}
+{"level":"error","message":"Error occurred at signup res.status(...).send is not a function","stack":"TypeError: res.status(...).send is not a function\n    at send (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at success (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:15:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:88:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:49:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:68:3)"}
+{"level":"error","message":"Error occurred at signup res.status(...).send is not a function","stack":"TypeError: res.status(...).send is not a function\n    at send (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at success (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:15:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:89:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:49:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:74:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:49:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:77:3)"}
+{"level":"error","message":"Error occurred at signup res.status(...).send is not a function","stack":"TypeError: res.status(...).send is not a function\n    at send (/home/ezra/dev/creativehub-endpoints/src/utils/baseController.js:3:26)\n    at success (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:15:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:98:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:49:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:83:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at signup Cannot read properties of undefined (reading 'googleSigned')","stack":"TypeError: Cannot read properties of undefined (reading 'googleSigned')\n    at User.googleSigned [as signup] (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:49:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous>.module.exports.signup (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:8:18)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:90:3)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Booking Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at signup generateAuthToken is not a function","stack":"TypeError: generateAuthToken is not a function\n    at generateAuthToken (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:9:25)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:113:3)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":""}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":""}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"code":400,"level":"error","message":"Error occurred at login loginId is required"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}
+{"level":"error","message":"Error occurred at signup Operation `users.findOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/home/ezra/dev/creativehub-endpoints/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:186:23)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"}

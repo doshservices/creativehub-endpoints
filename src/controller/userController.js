@@ -15,7 +15,7 @@ module.exports.signup = async (req, res) => {
     return success(res, { user, token });
   } catch (err) {
     logger.error("Error occurred at signup", err);
-     error(res, { code: err.code, message: err.message });
+    error(res, { code: err.code, message: err.message });
   }
 };
 
@@ -68,10 +68,36 @@ module.exports.sendOtp = async (req, res) => {
   try {
     const email = req.body.email;
     const user = await new User({ email }).sendOtp();
-    console.log(user)
+    console.log(user);
     return success(res, { user });
   } catch (err) {
     logger.error("Error occurred at sendOtp", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
+module.exports.addSkills = async (req, res) => {
+  try {
+    const skills = await new User({
+      userId: req.user._id,
+      ...req.body,
+    }).addSkills();
+    return success(res, { skills });
+  } catch (err) {
+    logger.error("Error occurred at addSkills", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
+module.exports.addLanguages = async (req, res) => {
+  try {
+    const languages = await new User({
+      userId: req.user._id,
+      ...req.body,
+    }).addLanguages();
+    return success(res, { languages });
+  } catch (err) {
+    logger.error("Error occurred at addLanguages", err);
     return error(res, { code: err.code, message: err.message });
   }
 };
@@ -150,10 +176,10 @@ exports.forgotPassword = (req, res) => {
         message: "Token Has Been Sent To Your Email",
       })
     )
-  .catch((err) => {
-    logger.error("Error occurred at forgotPassword", err);
-    return error(res, { code: err.code, message: err.message });
-  });
+    .catch((err) => {
+      logger.error("Error occurred at forgotPassword", err);
+      return error(res, { code: err.code, message: err.message });
+    });
 };
 
 exports.resetPassword = (req, res) => {
@@ -171,4 +197,3 @@ exports.resetPassword = (req, res) => {
       return error(res, { code: err.code, message: err.message });
     });
 };
-

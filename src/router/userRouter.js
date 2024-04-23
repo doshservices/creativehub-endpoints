@@ -15,7 +15,11 @@ userRoute.route("/users/login").post(
 
 userRoute.route("/users/send-token").post(user.sendOtp);
 
-userRoute.route("/users/add-skills").post(authenticate, user.updateUserDetails);
+userRoute.route("/users/add-skills").post(authenticate, user.addSkills);
+
+userRoute.route("/users/add-languages").post(authenticate, user.addLanguages);
+
+userRoute.route("/users/update-details").post(authenticate, user.updateUserDetails);
 
 userRoute.route("/users/follow-user").post(authenticate, user.followUser);
 

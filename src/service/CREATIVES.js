@@ -36,16 +36,16 @@ class Creatives {
           country,
         },
         {
+          address: new RegExp(location, "i"),
+        },
+      ],
+      $and: [
+        {
           gender,
         },
         {
           skills: skill,
         },
-        {
-          address: new RegExp(location, "i"),
-        },
-      ],
-      $and: [
         {
           role: USER_TYPE.CREATIVE,
         },

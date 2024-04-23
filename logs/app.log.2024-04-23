@@ -1,0 +1,298 @@
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"code":400,"level":"error","message":"Error occurred at updateUserDetails Invalid Field state"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"error","message":"Error occurred at addSkills userSchema.addSkills is not a function","stack":"TypeError: userSchema.addSkills is not a function\n    at User.addSkills (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:103:29)\n    at module.exports.addSkills (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:81:45)\n    at Layer.handle [as handle_request] (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/ezra/dev/creativehub-endpoints/node_modules/express/lib/router/route.js:144:13)\n    at authenticate (/home/ezra/dev/creativehub-endpoints/src/core/userAuth.js:30:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at addSkills newSkills is not iterable (cannot read property undefined)","stack":"Error: newSkills is not iterable (cannot read property undefined)\n    at Schema.methods.addSkills (/home/ezra/dev/creativehub-endpoints/src/models/userModel.js:164:11)\n    at User.addSkills (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:104:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.addSkills (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:81:20)"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"error","message":"Error occurred at addSkills newSkills is not iterable (cannot read property undefined)","stack":"Error: newSkills is not iterable (cannot read property undefined)\n    at Schema.methods.addSkills (/home/ezra/dev/creativehub-endpoints/src/models/userModel.js:164:11)\n    at User.addSkills (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:104:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.addSkills (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:81:20)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"error","message":"Error occurred at addSkills user validation failed: skills.2.experience_level: `ADVANC` is not a valid enum value for path `experience_level`.","stack":"Error: user validation failed: skills.2.experience_level: `ADVANC` is not a valid enum value for path `experience_level`.\n    at Schema.methods.addSkills (/home/ezra/dev/creativehub-endpoints/src/models/userModel.js:164:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async User.addSkills (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:104:12)\n    at async module.exports.addSkills (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:81:20)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"error","message":"Error occurred at addLanguages newLanguages is not iterable (cannot read property undefined)","stack":"Error: newLanguages is not iterable (cannot read property undefined)\n    at Schema.methods.addLanguages (/home/ezra/dev/creativehub-endpoints/src/models/userModel.js:176:11)\n    at User.addLanguages (/home/ezra/dev/creativehub-endpoints/src/service/USER.js:110:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async module.exports.addLanguages (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:94:23)"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"code":400,"level":"error","message":"Error occurred at signup Email already taken,Phone Number already taken"}
+{"level":"info","message":"Database connection successful!"}
+{"level":"info","message":"Creatives Backend Service Started on port 7000"}
+{"level":"error","message":"Error occurred at login Cannot read properties of undefined (reading '_id')","stack":"TypeError: Cannot read properties of undefined (reading '_id')\n    at _id (/home/ezra/dev/creativehub-endpoints/src/controller/userController.js:26:16)\n    at Object.<anonymous> (/home/ezra/dev/creativehub-endpoints/src/__test__/controllers/user.test.js:66:5)"}
+{"code":404,"level":"error","message":"Error occurred at getAllUsers Users Not Found!"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at getUserById Invalid Parameter. Resource Not Found"}
+{"code":400,"level":"error","message":"Error occurred at verifyUserEmail Invalid Otp"}

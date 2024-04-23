@@ -98,6 +98,18 @@ class User {
     return user;
   }
 
+  async addSkills() {
+    const { userId, newSkills } = this.data;
+    const user = await userSchema.findById(userId);
+    return await user.addSkills(newSkills);
+  }
+
+  async addLanguages() {
+    const { userId, newLanguages } = this.data;
+    const user = await userSchema.findById(userId);
+    return await user.addLanguages(newLanguages);
+  }
+
   async updateUserDetails() {
     const { newDetails, oldDetails } = this.data;
     const updates = Object.keys(newDetails);
@@ -106,17 +118,13 @@ class User {
       "lastName",
       "phoneNumber",
       "country",
-      "location",
-      "gender",
-      "skills",
+      "state",
       "bio",
       "profilePicture",
       "validId",
-      "languages",
       "certificates",
       "urls",
       "hourlyRate",
-      "status",
     ];
     return await util.performUpdate(
       updates,

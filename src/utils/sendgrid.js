@@ -7,10 +7,9 @@ const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(SENDGRID_API_KEY);
 const { logger } = require("../utils/logger");
 const userSchema = require("../models/userModel");
-const moment = require("moment");
 const { throwError } = require("./handleErrors");
-const { BARGAIN_STATUS } = require("./constants");
 const verificationCode = Math.floor(100000 + Math.random() * 100000);
+const { generateAuthToken } = require("../core/userAuth");
 
 async function sendEmailToken(Email, otp) {
   const msg = {
@@ -60,13 +59,21 @@ async function sendResetPasswordToken(Email, firstName, otp) {
 }
 
 async function registrationSuccessful(Email, name) {
+   const user = await userSchema.findOne({ email: Email });
+  const token = await generateAuthToken(
+    {
+      id: user._id,
+      email: user.email,
+    },
+    "120s"
+  );
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
     subject: "Registration Successful",
     dynamic_template_data: {
       name: name,
-      verificationUrl: `${FRONTEND_BASE_URL}/verify-email?email=${Email}`,
+      verificationUrl: `${FRONTEND_BASE_URL}/verify-email?token=${token}`,
     },
     template_id: "d-94a0b7462fbf41f8ad783749337ace8f",
   };
@@ -82,7 +89,7 @@ async function registrationSuccessful(Email, name) {
   }
 }
 
-function passwordEmail(Name, Email, link) {
+async function passwordEmail(Name, Email, link) {
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
@@ -90,22 +97,22 @@ function passwordEmail(Name, Email, link) {
     html: ``,
   };
 
-  return sgMail
-    .send(msg)
-    .then((result) => {})
-    .catch((error) => {
-      // Log friendly error
-      if (error.response) {
-        // Extract error msg
-        const { message, code, response } = error;
+  try {
+    const result = await sgMail
+      .send(msg);
+  } catch (error) {
+    // Log friendly error
+    if (error.response) {
+      // Extract error msg
+      const { message, code, response } = error;
 
-        // Extract response msg
-        const { headers, body } = response;
-      }
-    });
+      // Extract response msg
+      const { headers, body } = response;
+    }
+  }
 }
 
-function SuccessfulPasswordReset(Name, Email) {
+async function SuccessfulPasswordReset(Name, Email) {
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
@@ -113,21 +120,20 @@ function SuccessfulPasswordReset(Name, Email) {
     html: ``,
   };
 
-  return sgMail
-    .send(msg)
-    .then((result) => {
-      return result;
-    })
-    .catch((error) => {
-      // Log friendly error
-      if (error.response) {
-        // Extract error msg
-        const { message, code, response } = error;
+  try {
+    const result = await sgMail
+      .send(msg);
+    return result;
+  } catch (error) {
+    // Log friendly error
+    if (error.response) {
+      // Extract error msg
+      const { message, code, response } = error;
 
-        // Extract response msg
-        const { headers, body } = response;
-      }
-    });
+      // Extract response msg
+      const { headers, body } = response;
+    }
+  }
 }
 
 async function requestBargainEmail(
@@ -245,6 +251,12 @@ async function bargainEmail(Name, Email, CheckOut, Response) {
 async function sendEmailVerificationToken(email) {
   try {
     const verificationCode1 = Math.floor(100000 + Math.random() * 100000);
+     const token = await generateAuthToken({
+       id: user._id,
+       email: user.email,
+       role: user.role,
+       subscribedUser: user.subscribed,
+     });
     const user = await userSchema.findOne({ email });
     if (user) {
       user.otp = verificationCode1;

@@ -11,12 +11,11 @@ const { error } = require("../utils/baseController");
 const { USER_TYPE, ADMIN_ROLES, SUBSCRITION_STATUS } = require("../utils/constants");
 
 // Generate Authorization Token
-async function generateAuthToken(payload) {
-  return jwt.sign(
-    payload,
-    JWT_SECRETE_KEY,
-    { expiresIn: TOKEN_DURATION }
-  );
+async function generateAuthToken(payload, expiresIn) {
+  console.log(payload.expiresIn || TOKEN_DURATION);
+  return jwt.sign(payload, JWT_SECRETE_KEY, {
+    expiresIn: expiresIn || TOKEN_DURATION,
+  });
 }
 
 // checking if a user has a token

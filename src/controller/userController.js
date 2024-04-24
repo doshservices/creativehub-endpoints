@@ -56,7 +56,7 @@ module.exports.getUserById = async (req, res) => {
 
 module.exports.verifyUserEmail = async (req, res) => {
   try {
-    const user = await new User({ otp: req.body.otp }).verifyUser();
+    const user = await new User(req.body.token).verifyUser();
     return success(res, { user }, "user Email has been verified");
   } catch (err) {
     logger.error("Error occurred at verifyUserEmail", err);

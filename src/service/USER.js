@@ -3,6 +3,7 @@ const {
   sendResetPasswordToken,
   registrationSuccessful,
   sendEmailVerificationToken,
+  SuccessfulPasswordReset,
 } = require("../utils/sendgrid");
 const {
   throwError,
@@ -15,6 +16,7 @@ const util = require("../utils/util");
 const bankSchema = require("../models/bankModel");
 const { getBanks } = require("../integrations/flutterwave");
 const Wallet = require("./WALLET");
+const { decodeJwtToken, verifyToken } = require("../core/userAuth");
 
 class User {
   constructor(data) {
@@ -87,15 +89,14 @@ class User {
   }
 
   async verifyUser() {
-    const { otp } = this.data;
-    const user = await userSchema.findOne({ otp });
-    if (!user) throwError("Invalid Otp", 400);
-
-    user.verified = true;
-    user.otp = null;
-    await user.save();
-
-    return user;
+      const payload = verifyToken(this.data)
+      const user = await userSchema.findById(payload.id);
+      user.verified = true
+      await user.save()
+      if (!user){
+        throwError(`Invalid Token!`)
+      }
+      return user
   }
 
   async addSkills() {

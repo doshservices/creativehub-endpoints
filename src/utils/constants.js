@@ -47,4 +47,10 @@ module.exports = {
     INTERMEDIATE: "INTERMEDIATE",
     ADVANCED: "ADVANCED",
   },
+  NOTIFICATION_TYPE: {
+    REVIEW: "REVIEW",
+    BARGAIN: "BARGAIN",
+    TRANSACTION: "TRANSACTION",
+    
+  },
 };

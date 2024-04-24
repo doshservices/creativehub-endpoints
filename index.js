@@ -23,11 +23,13 @@ const user = require("./src/router/userRouter");
 const creatives = require("./src/router/creativeRouter");
 const bank = require("./src/router/bankRouter");
 const wallet = require("./src/router/walletRouter");
+const notification = require("./src/router/notificationRouter");
 
 app.use("/api/", user);
 app.use("/api/", creatives);
 app.use("/api/", bank);
 app.use("/api/", wallet);
+app.use("/api/", notification);
 
 app.get("/", (req, res) => {
   res

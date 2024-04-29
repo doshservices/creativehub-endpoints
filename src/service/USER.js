@@ -126,6 +126,7 @@ class User {
       "certificates",
       "urls",
       "hourlyRate",
+      "languages"
     ];
     return await util.performUpdate(
       updates,

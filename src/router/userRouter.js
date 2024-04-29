@@ -27,9 +27,9 @@ userRoute.route("/users/unfollow-user").post(authenticate, user.unfollowUser);
 
 userRoute
   .route("/users/forgot-password")
-  .post(authenticate, user.forgotPassword);
+  .post(user.forgotPassword);
 
-userRoute.route("/users/reset-password").post(authenticate, user.resetPassword);
+userRoute.route("/users/reset-password").post(user.resetPassword);
 
 userRoute.route("/users/get-banks").get(user.getBanks);
 

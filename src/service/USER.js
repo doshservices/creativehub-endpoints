@@ -9,14 +9,11 @@ const {
   throwError,
   handleCastErrorExceptionForInvalidObjectId,
 } = require("../utils/handleErrors");
-const { USER_TYPE } = require("../utils/constants");
 const { validateParameters } = require("../utils/util");
 const bcrypt = require("bcrypt");
 const util = require("../utils/util");
-const bankSchema = require("../models/bankModel");
-const { getBanks } = require("../integrations/flutterwave");
 const Wallet = require("./WALLET");
-const { decodeJwtToken, verifyToken } = require("../core/userAuth");
+const { verifyToken } = require("../core/userAuth");
 
 class User {
   constructor(data) {

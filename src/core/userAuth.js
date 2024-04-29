@@ -61,13 +61,9 @@ async function getUserPayload(payload) {
 }
 
 async function getUsersPayload(userId) {
-  return await User.findOne({ _id: userId })
-    .orFail(() =>
-      throwError("Access denied. Please login or create an account", 401)
-    )
-    .catch((error) =>
-      isCastError(error) ? handleCastErrorExceptionForInvalidObjectId() : error
-    );
+  const user = await User.findOne({ _id: userId })
+  if (!user) return  throwError("Access denied. Please login or create an account", 401)
+    return user
 }
 
 // Permission for users

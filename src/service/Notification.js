@@ -23,7 +23,6 @@ class Notification {
     return await NotificationSchema.find(this.data)
       .sort({ createdAt: -1 })
       .populate("userId docId")
-      .orFail(() => throwError("No Notification Found", 404));
   }
 
   async markAllUserNotificationsAsRead() {

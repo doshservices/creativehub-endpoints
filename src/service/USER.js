@@ -61,6 +61,10 @@ class User {
     return newUser;
   }
 
+  async resendEmailToken() {
+    return registrationSuccessful(this.data.email);
+  }
+
   async login() {
     const { loginId, password } = this.data;
     const validParameters = validateParameters(
@@ -126,7 +130,6 @@ class User {
       "certificates",
       "urls",
       "hourlyRate",
-      "languages"
     ];
     return await util.performUpdate(
       updates,

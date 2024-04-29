@@ -71,6 +71,7 @@ const Schema = new mongoose.Schema({
         },
       },
     ],
+    default: [],
   },
   country: {
     type: String,

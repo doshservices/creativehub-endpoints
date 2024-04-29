@@ -58,28 +58,28 @@ async function sendResetPasswordToken(Email, firstName, otp) {
     });
 }
 
-async function registrationSuccessful(Email, name) {
-   const user = await userSchema.findOne({ email: Email });
+async function registrationSuccessful(Email) {
+  const user = await userSchema.findOne({ email: Email });
   const token = await generateAuthToken(
     {
       id: user._id,
       email: user.email,
     },
-    "120s"
+    "7days"
   );
   const msg = {
     to: Email, // Change to your recipient
     from: VERIFIED_EMAIL, // Change to your verified sender
     subject: "Registration Successful",
     dynamic_template_data: {
-      name: name,
+      name: user.firstName,
       verificationUrl: `${FRONTEND_BASE_URL}/verify-email?token=${token}`,
     },
     template_id: "d-94a0b7462fbf41f8ad783749337ace8f",
   };
   try {
     const result = await sgMail.send(msg);
-    return result;
+    return `Token Has Been Sent To ${Email}`;
   } catch (error) {
     if (error.response) {
       const { response } = error;
@@ -98,8 +98,7 @@ async function passwordEmail(Name, Email, link) {
   };
 
   try {
-    const result = await sgMail
-      .send(msg);
+    const result = await sgMail.send(msg);
   } catch (error) {
     // Log friendly error
     if (error.response) {
@@ -121,8 +120,7 @@ async function SuccessfulPasswordReset(Name, Email) {
   };
 
   try {
-    const result = await sgMail
-      .send(msg);
+    const result = await sgMail.send(msg);
     return result;
   } catch (error) {
     // Log friendly error
@@ -251,12 +249,12 @@ async function bargainEmail(Name, Email, CheckOut, Response) {
 async function sendEmailVerificationToken(email) {
   try {
     const verificationCode1 = Math.floor(100000 + Math.random() * 100000);
-     const token = await generateAuthToken({
-       id: user._id,
-       email: user.email,
-       role: user.role,
-       subscribedUser: user.subscribed,
-     });
+    const token = await generateAuthToken({
+      id: user._id,
+      email: user.email,
+      role: user.role,
+      subscribedUser: user.subscribed,
+    });
     const user = await userSchema.findOne({ email });
     if (user) {
       user.otp = verificationCode1;

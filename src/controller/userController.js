@@ -76,6 +76,17 @@ module.exports.sendOtp = async (req, res) => {
   }
 };
 
+module.exports.resendEmailToken = async (req, res) => {
+  try {
+    const email = req.body.email;
+    const user = await new User({ email }).resendEmailToken();
+    return success(res, { user });
+  } catch (err) {
+    logger.error("Error occurred at resendEmailToken", err);
+    return error(res, { code: err.code, message: err.message });
+  }
+};
+
 module.exports.addSkills = async (req, res) => {
   try {
     const skills = await new User({

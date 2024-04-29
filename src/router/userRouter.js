@@ -13,7 +13,10 @@ userRoute.route("/users/login").post(
   // redisCacheMiddleware(), 
   user.login);
 
-userRoute.route("/users/send-token").post(user.sendOtp);
+userRoute.route("/users/send-otp").post(user.sendOtp);
+
+
+userRoute.route("/users/send-token").post(user.resendEmailToken);
 
 userRoute.route("/users/add-skills").post(authenticate, user.addSkills);
 

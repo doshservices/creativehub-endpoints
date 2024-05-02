@@ -68,7 +68,6 @@ module.exports.sendOtp = async (req, res) => {
   try {
     const email = req.body.email;
     const user = await new User({ email }).sendOtp();
-    console.log(user);
     return success(res, { user });
   } catch (err) {
     logger.error("Error occurred at sendOtp", err);
@@ -205,6 +204,23 @@ exports.resetPassword = (req, res) => {
     )
     .catch((err) => {
       logger.error("Error occurred at resetPassword", err);
+      return error(res, { code: err.code, message: err.message });
+    });
+};
+
+exports.changePassword = (req, res) => {
+  req.body['email'] = req.user.email
+  new User(req.body)
+    .changePassword()
+    .then((data) =>
+      success(res, {
+        status: "success",
+        success: true,
+        message: "Password change Successful",
+      })
+    )
+    .catch((err) => {
+      logger.error("Error occurred at changePassword", err);
       return error(res, { code: err.code, message: err.message });
     });
 };

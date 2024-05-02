@@ -56,7 +56,6 @@ exports.initiatePaymentFlutterwave = async (
 
 exports.flutterPaymentCallback = async (req, res) => {
   if (req.query.status === "successful") {
-    console.log(req.query);
   }
 };
 

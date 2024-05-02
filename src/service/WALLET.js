@@ -70,7 +70,6 @@ class Wallet {
     this.data = userId;
     const userWallet = await this.getUserWallet();
     let walletBalance = userWallet.availableBalance;
-    console.log({ initialBalance: walletBalance });
     if (walletBalance < amount) {
       throwError("Insufficient Balance! Withdrawal Exceeds Available Balance!");
     }
@@ -106,22 +105,16 @@ class Wallet {
       this.data
     ).getTransactionByTransferCode();
     let walletBalance = userWallet.availableBalance;
-    console.log({ initialBalance: walletBalance });
     walletBalance -= Number(transactionDetails.amount);
-    console.log({ walletBalance });
     const { status } = await finalizeWithdrawToBank(
       transfer_code,
       otp
     );
-    console.log({ status });
     if (status.toUpperCase() === TRANSACTION_STATUS.SUCCESS) {
       userWallet.availableBalance = walletBalance;
       await userWallet.save();
       transactionDetails.status = status.toUpperCase();
       await transactionDetails.save();
-      console.log(userWallet.availableBalance);
-      console.log({ userWallet });
-      console.log({ transactionDetails });
     }
     return "Withdrawal Successful";
   }

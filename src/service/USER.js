@@ -90,14 +90,14 @@ class User {
   }
 
   async verifyUser() {
-      const payload = verifyToken(this.data)
-      const user = await userSchema.findById(payload.id);
-      user.verified = true
-      await user.save()
-      if (!user){
-        throwError(`Invalid Token!`)
-      }
-      return user
+    const payload = verifyToken(this.data);
+    const user = await userSchema.findById(payload.id);
+    user.verified = true;
+    await user.save();
+    if (!user) {
+      throwError(`Invalid Token!`);
+    }
+    return user;
   }
 
   async addSkills() {
@@ -205,6 +205,24 @@ class User {
       throwError("Invalid OTP!");
     }
     await SuccessfulPasswordReset(updateUser.firstName, updateUser.email);
+    return updateUser;
+  }
+
+  async changePassword() {
+    const { oldPassword, newPassword, email } = this.data;
+    if (!oldPassword || !newPassword) {
+      throwError("Please Input Your Old Password and New Password");
+    }
+    const user = await userSchema
+      .findOne({ email: email })
+      .orFail(() => throwError("Invalid Email", 401));
+    const isMatch = await bcrypt.compare(oldPassword, user.password);
+    if (!isMatch) {
+      throwError("Invalid Password");
+    }
+    const hash = await bcrypt.hash(newPassword, 10),
+    updateUser = await userSchema.findByIdAndUpdate(user._id, {password: hash})
+    await SuccessfulPasswordReset(user.firstName, user.email);
     return updateUser;
   }
 }

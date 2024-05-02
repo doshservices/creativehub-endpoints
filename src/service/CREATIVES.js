@@ -32,38 +32,39 @@ class Creatives {
       .orFail(new Error("No Creative Found"));
   }
 
-  // search creatives
+  escapeRegExp(string) {
+    if (!string) return ""; // Return empty string if string is undefined or null
+    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
+  }
+
   async searchCreatives() {
     const { gender, skill, country, location } = this.data;
 
     let query = {
-      $or: [
-        {
-          country,
-        },
-        {
-          address: new RegExp(location, "i"),
-        },
-      ],
-      $and: [
-        {
-          gender,
-        },
-        {
-          skills: {
-            $elemMatch: {
-              skill: { $in: skill },
-            },
-          },
-        },
-        {
-          role: USER_TYPE.CREATIVE,
-        },
-        {
-          status: ACCOUNT_STATUS.ACTIVE,
-        },
-      ],
+      $and: [{ role: USER_TYPE.CREATIVE }, { status: ACCOUNT_STATUS.ACTIVE }],
     };
+
+    if (country) {
+      query.$and.push({ country: { $regex: new RegExp(country, "i") } });
+    }
+
+    if (location) {
+      query.$and.push({
+        address: { $regex: new RegExp(location, "i") },
+      });
+    }
+
+    if (gender) {
+      query.$and.push({ gender });
+    }
+
+    if (skill) {
+      query.$and[0].skills = {
+        $elemMatch: {
+          skill: { $regex: new RegExp(this.escapeRegExp(skill), "i") },
+        },
+      };
+    }
     return await userModel.find(query);
   }
 
@@ -145,21 +146,12 @@ class Creatives {
     const ref = this.data;
     const { status, message, paymentDate, authorization, customer, metadata } =
       await verifyPayment(ref);
-    console.log({
-      status,
-      message,
-      paymentDate,
-      authorization,
-      customer,
-      metadata,
-    });
     if (status === "success") {
       const bargain = await bargainSchema.findById(metadata.docId);
       const [user, creative] = await Promise.all([
         userSchema.findById(bargain.senderId),
         userSchema.findById(bargain.recieverId),
       ]);
-      console.log({ user, creative });
       bargain.status = BARGAIN_STATUS.PAID;
       await bargain.save();
       await bargainPaidEmail(

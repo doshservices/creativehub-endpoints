@@ -12,7 +12,6 @@ const { USER_TYPE, ADMIN_ROLES, SUBSCRITION_STATUS } = require("../utils/constan
 
 // Generate Authorization Token
 async function generateAuthToken(payload, expiresIn) {
-  console.log(payload.expiresIn || TOKEN_DURATION);
   return jwt.sign(payload, JWT_SECRETE_KEY, {
     expiresIn: expiresIn || TOKEN_DURATION,
   });

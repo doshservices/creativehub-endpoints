@@ -32,6 +32,8 @@ userRoute
   .route("/users/forgot-password")
   .post(user.forgotPassword);
 
+userRoute.route("/users/change-password").post(authenticate, user.changePassword);
+
 userRoute.route("/users/reset-password").post(user.resetPassword);
 
 userRoute.route("/users/get-banks").get(user.getBanks);

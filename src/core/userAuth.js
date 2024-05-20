@@ -11,12 +11,10 @@ const { error } = require("../utils/baseController");
 const { USER_TYPE, ADMIN_ROLES, SUBSCRITION_STATUS } = require("../utils/constants");
 
 // Generate Authorization Token
-async function generateAuthToken(payload) {
-  return jwt.sign(
-    payload,
-    JWT_SECRETE_KEY,
-    { expiresIn: TOKEN_DURATION }
-  );
+async function generateAuthToken(payload, expiresIn) {
+  return jwt.sign(payload, JWT_SECRETE_KEY, {
+    expiresIn: expiresIn || TOKEN_DURATION,
+  });
 }
 
 // checking if a user has a token
@@ -62,13 +60,9 @@ async function getUserPayload(payload) {
 }
 
 async function getUsersPayload(userId) {
-  return await User.findOne({ _id: userId })
-    .orFail(() =>
-      throwError("Access denied. Please login or create an account", 401)
-    )
-    .catch((error) =>
-      isCastError(error) ? handleCastErrorExceptionForInvalidObjectId() : error
-    );
+  const user = await User.findOne({ _id: userId })
+  if (!user) return  throwError("Access denied. Please login or create an account", 401)
+    return user
 }
 
 // Permission for users

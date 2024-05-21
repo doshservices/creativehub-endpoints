@@ -1,16 +1,10 @@
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 const validator = require("validator");
 const uniqueValidator = require("mongoose-unique-validator");
 const { throwError } = require("../utils/handleErrors");
-const {
-  GENDER,
-  USER_TYPE,
-  SERVICE_TYPE,
-  SUBSCRITION_STATUS,
-  ACCOUNT_STATUS,
-  LANGUAGE_PROFICIENCY,
-} = require("../utils/constants");
+const { GENDER, USER_TYPE, SERVICE_TYPE, SUBSCRITION_STATUS, ACCOUNT_STATUS } = require("../utils/constants");
+
 
 const Schema = new mongoose.Schema({
   firstName: {
@@ -37,11 +31,11 @@ const Schema = new mongoose.Schema({
   },
   phoneNumber: {
     type: String,
-    required: true,
+    required: true
   },
   password: {
     type: String,
-    required: true,
+    required: true
   },
   bio: {
     type: String,
@@ -50,33 +44,16 @@ const Schema = new mongoose.Schema({
     type: String,
   },
   skills: {
-    type: [
-      {
-        skill: String,
-        experience_level: {
-          type: String,
-          enum: Object.values(LANGUAGE_PROFICIENCY),
-        },
-      },
-    ],
-    default: [],
+    type: Array,
+    default: []
   },
   languages: {
-    type: [
-      {
-        language: String,
-        proficiency: {
-          type: String,
-          enum: Object.values(LANGUAGE_PROFICIENCY),
-        },
-      },
-    ],
-    default: [],
+    type: Array,
   },
   country: {
     type: String,
   },
-  state: {
+  location: {
     type: String,
   },
   otp: {
@@ -85,69 +62,68 @@ const Schema = new mongoose.Schema({
   verified: {
     type: Boolean,
     default: false,
-    required: true,
+    required: true
   },
   role: {
     type: String,
     required: true,
-    enum: Object.keys(USER_TYPE),
+    enum: Object.keys(USER_TYPE)
   },
   googleSigned: {
     type: Boolean,
     default: false,
-    required: true,
+    required: true
   },
   status: {
     type: String,
     default: ACCOUNT_STATUS.ACTIVE,
-    enum: Object.keys(ACCOUNT_STATUS),
+    enum: Object.keys(ACCOUNT_STATUS)
   },
   followers: {
     type: Array,
-    default: [],
+    default: []
   },
   certificates: {
     type: Array,
-    default: [],
+    default: []
   },
   urls: {
     type: Array,
-    default: [],
+    default: []
   },
   hourlyRate: {
-    type: String,
+    type: String
   },
   subscribed: {
     type: String,
     enum: Object.keys(SUBSCRITION_STATUS),
-    default: SUBSCRITION_STATUS.PENDING,
+    default: SUBSCRITION_STATUS.PENDING
   },
   createdAt: {
     type: Date,
-    default: Date.now(),
-  },
-});
-
-Schema.pre("save", async function save(next) {
-  try {
-    const user = this;
-
-    if (!user.isModified("password")) {
-      return next();
-    }
-    user.password = await bcrypt.hash(user.password, 10);
-    next();
-  } catch (e) {
-    next(e);
+    default: Date.now()
   }
-});
+})
+
+
+Schema.pre('save', async function save(next) {
+    try {
+        const user = this;
+    
+        if (!user.isModified("password")) {
+          return next();
+        }
+        user.password = await bcrypt.hash(user.password, 10);
+        next();
+      } catch (e) {
+        next(e);
+      }
+})
 
 Schema.statics.findByCredentials = async (loginId, password) => {
-  const user = await userSchema
-    .findOne({
-      $or: [{ phoneNumber: loginId }, { email: loginId }],
-    })
-    .orFail(() => throwError("Invalid Login Details", 404));
+const user = await userSchema.findOne({
+    $or: [{ phoneNumber: loginId }, { email: loginId }],
+  }).orFail(() => throwError("Invalid Login Details", 404));
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
     throwError("Incorrect Password");
@@ -155,32 +131,8 @@ Schema.statics.findByCredentials = async (loginId, password) => {
   return user;
 };
 
-// Add method to add more skills
-Schema.methods.addSkills = async function(newSkills) {
-  try {
-    this.skills.push(...newSkills);
-    await this.save();
-    return this.skills;
-  } catch (error) {
-    throw new Error(error.message);
-  }
-};
-
-// Add method to add more languages
-Schema.methods.addLanguages = async function(newLanguages) {
-  try {
-    // Push new languages to the existing languages array
-    this.languages.push(...newLanguages);
-    await this.save();
-    return this.languages;
-  } catch (error) {
-    throw new Error(error.message);
-  }
-};
-
-
 Schema.plugin(uniqueValidator, { message: "{TYPE} must be unique." });
 
-const userSchema = mongoose.model("user", Schema);
+const userSchema = mongoose.model('user', Schema)
 
-module.exports = userSchema;
+module.exports = userSchema

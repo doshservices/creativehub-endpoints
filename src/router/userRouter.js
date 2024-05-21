@@ -13,16 +13,9 @@ userRoute.route("/users/login").post(
   // redisCacheMiddleware(), 
   user.login);
 
-userRoute.route("/users/send-otp").post(user.sendOtp);
+userRoute.route("/users/send-token").post(user.sendOtp);
 
-
-userRoute.route("/users/send-token").post(user.resendEmailToken);
-
-userRoute.route("/users/add-skills").post(authenticate, user.addSkills);
-
-userRoute.route("/users/add-languages").post(authenticate, user.addLanguages);
-
-userRoute.route("/users/update-details").post(authenticate, user.updateUserDetails);
+userRoute.route("/users/add-skills").post(authenticate, user.updateUserDetails);
 
 userRoute.route("/users/follow-user").post(authenticate, user.followUser);
 
@@ -30,11 +23,9 @@ userRoute.route("/users/unfollow-user").post(authenticate, user.unfollowUser);
 
 userRoute
   .route("/users/forgot-password")
-  .post(user.forgotPassword);
+  .post(authenticate, user.forgotPassword);
 
-userRoute.route("/users/change-password").post(authenticate, user.changePassword);
-
-userRoute.route("/users/reset-password").post(user.resetPassword);
+userRoute.route("/users/reset-password").post(authenticate, user.resetPassword);
 
 userRoute.route("/users/get-banks").get(user.getBanks);
 

@@ -4,7 +4,6 @@ const {
   USER_TYPE,
   ACCOUNT_STATUS,
   BARGAIN_STATUS,
-  NOTIFICATION_TYPE,
 } = require("../utils/constants");
 const {
   initializePayment,
@@ -12,13 +11,8 @@ const {
 } = require("../integrations/paystackClient");
 const { throwError } = require("../utils/handleErrors");
 const reviewSchema = require("../models/reviewModel");
-const {
-  bargainEmail,
-  requestBargainEmail,
-  bargainPaidEmail,
-} = require("../utils/sendgrid");
+const { bargainEmail, requestBargainEmail, bargainPaidEmail } = require("../utils/sendgrid");
 const userSchema = require("../models/userModel");
-const Notification = require("./Notification");
 
 class Creatives {
   constructor(data) {
@@ -32,39 +26,34 @@ class Creatives {
       .orFail(new Error("No Creative Found"));
   }
 
-  escapeRegExp(string) {
-    if (!string) return ""; // Return empty string if string is undefined or null
-    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
-  }
-
+  // search creatives
   async searchCreatives() {
     const { gender, skill, country, location } = this.data;
 
     let query = {
-      $and: [{ role: USER_TYPE.CREATIVE }, { status: ACCOUNT_STATUS.ACTIVE }],
-    };
-
-    if (country) {
-      query.$and.push({ country: { $regex: new RegExp(country, "i") } });
-    }
-
-    if (location) {
-      query.$and.push({
-        address: { $regex: new RegExp(location, "i") },
-      });
-    }
-
-    if (gender) {
-      query.$and.push({ gender });
-    }
-
-    if (skill) {
-      query.$and[0].skills = {
-        $elemMatch: {
-          skill: { $regex: new RegExp(this.escapeRegExp(skill), "i") },
+      $or: [
+        {
+          country,
         },
-      };
-    }
+        {
+          gender,
+        },
+        {
+          skills: skill,
+        },
+        {
+          address: new RegExp(location, "i"),
+        },
+      ],
+      $and: [
+        {
+          role: USER_TYPE.CREATIVE,
+        },
+        {
+          status: ACCOUNT_STATUS.ACTIVE,
+        },
+      ],
+    };
     return await userModel.find(query);
   }
 
@@ -73,14 +62,6 @@ class Creatives {
     const reciever = await userSchema.findById(this.data.recieverId);
     const sender = await userSchema.findById(this.data.senderId);
     const bargain = await new bargainSchema(this.data).save();
-    await new Notification().createNotification({
-      userId: this.data.recieverId,
-      docId: bargain._id,
-      docModel: "bargain",
-      message: `${sender.firstName} ${sender.firstName} wants to bargain with you`,
-      image: sender.profileImg,
-      notificationType: NOTIFICATION_TYPE.BARGAIN,
-    });
     await requestBargainEmail(
       reciever.firstName,
       reciever.email,
@@ -112,16 +93,8 @@ class Creatives {
       const pay = await initializePayment(
         bargain.senderId.email,
         bargain.proposedPrice,
-        bargain._id
+        bargain._id,
       );
-      await new Notification().createNotification({
-        userId: bargain.senderId._id,
-        docId: bargain._id,
-        docModel: "bargain",
-        message: `${bargain.recieverId.firstName} ${bargain.recieverId.lastName} has accepted your bargain`,
-        image: bargain.recieverId.profileImg,
-        notificationType: NOTIFICATION_TYPE.BARGAIN,
-      });
       await bargainEmail(
         name,
         email,
@@ -130,14 +103,6 @@ class Creatives {
       );
     } else if (response === BARGAIN_STATUS.DECLINED) {
       await bargainEmail(name, email, undefined, BARGAIN_STATUS.DECLINED);
-      await new Notification().createNotification({
-        userId: bargain.senderId._id,
-        docId: bargain._id,
-        docModel: "bargain",
-        message: `${bargain.recieverId.firstName} ${bargain.recieverId.lastName} has declined your bargain`,
-        image: bargain.recieverId.profileImg,
-        notificationType: NOTIFICATION_TYPE.BARGAIN,
-      });
     }
     return "RESPONSE SENT!";
   }
@@ -146,14 +111,23 @@ class Creatives {
     const ref = this.data;
     const { status, message, paymentDate, authorization, customer, metadata } =
       await verifyPayment(ref);
+    console.log({
+      status,
+      message,
+      paymentDate,
+      authorization,
+      customer,
+      metadata,
+    });
     if (status === "success") {
-      const bargain = await bargainSchema.findById(metadata.docId);
+      const bargain = await bargainSchema.findById(metadata.docId)
       const [user, creative] = await Promise.all([
         userSchema.findById(bargain.senderId),
         userSchema.findById(bargain.recieverId),
       ]);
-      bargain.status = BARGAIN_STATUS.PAID;
-      await bargain.save();
+      console.log({user, creative});
+      bargain.status = BARGAIN_STATUS.PAID
+      await bargain.save()
       await bargainPaidEmail(
         creative.firstName + " " + creative.lastName,
         creative.email,
@@ -185,23 +159,15 @@ class Creatives {
 
   async reviewCreative() {
     const { userId, stars, comment, creativeId } = this.data;
-    const user = await userModel.findById(userId);
-    const review = await new reviewSchema({
+    review
+    return await new reviewSchema({
       userId,
       stars,
       comment,
       creativeId,
     }).save();
-    await new Notification().createNotification({
-      userId: creativeId,
-      docId: review._id,
-      docModel: "review",
-      message: `${user.firstName} ${user.lastName} reviewed your profile`,
-      image: user.profileImg,
-      notificationType: NOTIFICATION_TYPE.REVIEW,
-    });
-    return review;
   }
+  
 
   async getUserReview() {
     const { userId } = this.data;

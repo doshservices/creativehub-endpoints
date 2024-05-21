@@ -42,6 +42,7 @@ class Transaction {
 
   async getTransactionByTransferCode() {
     const {transfer_code} = this.data;
+    console.log({transfer_code})
     return await TransactionSchema.findOne({ transfer_code }).orFail(() =>
       TRANSACTION_NOT_FOUND(
         `No Transaction Found With Transfer Code ${transfer_code}`

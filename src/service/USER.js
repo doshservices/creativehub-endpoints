@@ -122,7 +122,7 @@ class User {
       "country",
       "state",
       "bio",
-      "profilePicture",
+      "profileImg",
       "validId",
       "certificates",
       "urls",
